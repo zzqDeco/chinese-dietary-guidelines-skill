@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Dietary Guidelines"
+  short_description: "Record meals and plan balanced Chinese-guideline diets"
+  default_prompt: "Use $chinese-dietary-guidelines to record today's meals and recommend a 7-day diet plan."
