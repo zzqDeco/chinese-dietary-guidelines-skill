@@ -1,0 +1,49 @@
+pdf_page,file,location_hint,original_text,corrected_text,term,action,confidence,source_image,mode,notes
+011,full,萤索搭配,萤索搭配,荤素搭配,荤素,corrected,high,qa/body_page_images/page_011.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+011,full,训饪,训饪,烹饪,烹饪,corrected,high,qa/body_page_images/page_011.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+011,full,公筷公义,公筷公义,公筷公勺,公筷公勺,corrected,high,qa/body_page_images/page_011.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+110,full,训饪,训饪,烹饪,烹饪,corrected,high,qa/body_page_images/page_110.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+158,full,训饪,训饪,烹饪,烹饪,corrected,high,qa/body_page_images/page_158.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+168,full,准则八_公筷分餐，杜绝浪费,准则八_公筷分餐，杜绝浪费,准则八 公筷分餐，杜绝浪费,公筷分餐,corrected,high,qa/body_page_images/page_168.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+168,full,讲究卫生，从分餐公筷做起,讲究卫生，从分餐公筷做起,讲究卫生，从分餐公筷做起,公筷,corrected,high,qa/body_page_images/page_168.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+172,full,训饪,训饪,烹饪,烹饪,corrected,high,qa/body_page_images/page_172.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+175,full,公筷公与,公筷公与,公筷公勺,公筷公勺,corrected,high,qa/body_page_images/page_175.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+175,full,策子,策子,筷子,筷子,corrected,high,qa/body_page_images/page_175.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+175,full,公筷公怀,公筷公怀,公筷公勺,公筷公勺,corrected,high,qa/body_page_images/page_175.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+175,full,来菜感汤,来菜感汤,夹菜盛汤,夹菜盛汤,corrected,high,qa/body_page_images/page_175.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+175,full,碗征,碗征,碗筷,碗筷,corrected,high,qa/body_page_images/page_175.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+176,full,公筷公怀,公筷公怀,公筷公勺,公筷公勺,corrected,high,qa/body_page_images/page_176.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+176,full,选这食物,选这食物,选烹食物,选烹食物,corrected,high,qa/body_page_images/page_176.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+176,full,背养健康,背养健康,营养健康,营养健康,corrected,high,qa/body_page_images/page_176.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+176,full,餐锯就餐,餐锯就餐,餐馆就餐,餐馆就餐,corrected,high,qa/body_page_images/page_176.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+176,full,公共和餐饮,公共和餐饮,公共餐饮,公共餐饮,corrected,high,qa/body_page_images/page_176.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+176,full,公筷公司,公筷公司,公筷公勺,公筷公勺,corrected,high,qa/body_page_images/page_176.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+176,full,上菜前分父,上菜前分父,上菜前分餐,上菜前分餐,corrected,high,qa/body_page_images/page_176.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+176,full,优食卫生,优食卫生,饮食卫生,饮食卫生,corrected,high,qa/body_page_images/page_176.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+177,full,公筷公怀,公筷公怀,公筷公勺,公筷公勺,corrected,high,qa/body_page_images/page_177.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+177,full,训饪,训饪,烹饪,烹饪,corrected,high,qa/body_page_images/page_177.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+180,full,公筷\nBAY,"公筷
+BAY",公筷公勺,公筷公勺,corrected,high,qa/body_page_images/page_180.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+180,full,公勺公筑,公勺公筑,公勺公筷,公勺公筷,corrected,high,qa/body_page_images/page_180.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+180,full,取和餐,取和餐,取餐,取餐,corrected,high,qa/body_page_images/page_180.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+315,full,训饪,训饪,烹饪,烹饪,corrected,high,qa/body_page_images/page_315.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+322,full,训饪,训饪,烹饪,烹饪,corrected,high,qa/body_page_images/page_322.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+323,full,平衡匿食,平衡匿食,平衡膳食,平衡膳食,corrected,high,qa/body_page_images/page_323.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+306,full,会选会赢,会选会赢,会选会烹,会选会烹,corrected,high,qa/body_page_images/page_306.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+325,full,公筷分 “ 售 ，\n餐制,"公筷分 “ 售 ，
+餐制",公筷分餐制,公筷分餐制,corrected,high,qa/body_page_images/page_325.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+325,full,所但导,所但导,所倡导,倡导,corrected,high,qa/body_page_images/page_325.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+325,full,平衡匿食,平衡匿食,平衡膳食,平衡膳食,corrected,high,qa/body_page_images/page_325.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+332,full,训饪,训饪,烹饪,烹饪,corrected,high,qa/body_page_images/page_332.png,exact,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+243,full,2\. 食物多样化才能满足 7~24.*?3\. 7-24 月龄婴幼儿辅食多样化的情况有待改观,2\. 食物多样化才能满足 7~24.*?3\. 7-24 月龄婴幼儿辅食多样化的情况有待改观,"2. 食物多样化才能满足 7~24月龄婴幼儿的营养需求
+不同种类的食物提供不同的营养素，只有多样化的食物才能提供全面而均衡的营养。①谷物类，如稠粥、软饭、面条等含有大量的碳水化合物，可以为婴幼儿提供能量，但一般缺乏铁、锌、钙、维生素 A 等营养素。②动物性食物，如鸡蛋、瘦肉、肝脏、鱼类等，富含优质蛋白质、铁、锌、维生素 A 等，是婴幼儿不可或缺的食物。③蔬菜和水果是维生素、矿物质以及纤维素的重要来源之一。④豆类是优质蛋白质的补充来源。⑤植物油和脂肪，提供能量和必需脂肪酸。
+3. 7~24 月龄婴幼儿辅食多样化的情况有待改观",BERE,corrected,high,qa/body_page_images/page_243.png,regex,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+245,full,"4\. 100% 的纯果汁不同于果泥.*?5[,，]\s*辅食不加盐","4\. 100% 的纯果汁不同于果泥.*?5[,，]\s*辅食不加盐","4. 100% 的纯果汁不同于果泥
+鲜榨果汁、100%纯果汁中的果糖、蔗糖等糖含量过高，膳食纤维含量少，其营养价值不如果泥或整个水果。为减少婴幼儿糖的摄入量，推荐 7~12 月龄的婴儿最好食用果泥和小果粒，可少量饮用纯果汁但需要稀释；13~24 月龄幼儿每天纯果汁的饮用量不超过 120ml，并且最好限制在进食正餐或点心时饮用。
+5. 辅食不加盐",BERE,corrected,high,qa/body_page_images/page_245.png,regex,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。
+296,full,\(2\s*\)\s*发酵豆制品不能缺.*?\(3\)\s*巧搭配,\(2\s*\)\s*发酵豆制品不能缺.*?\(3\)\s*巧搭配,"（2）发酵豆制品不能缺
+发酵豆制品中还含有维生素 B12，素食人群特别要注意选用发酵豆制品。
+
+发酵豆制品是以大豆为主要原料，经微生物发酵而成的豆制品。常见制品有发酵豆、酸豆浆、腐乳、豆豉、臭豆腐、酱油、豆瓣酱等。发酵豆制品制作过程中，由于微生物的生长繁殖，可合成少量的维生素 B12。
+发酵豆制品维生素 B12 含量的多少，除与微生物的品种有关外，与微生物生长繁殖的多少也有关。微生物生长繁殖的越多，豆制品的固有风味越好，维生素 B12 合成的就越多，在选购时应注意。本指南推荐全素者每日摄入 5~10g 发酵豆制品。
+（3）巧搭配",BERE,corrected,high,qa/body_page_images/page_296.png,regex,按 220 DPI 页图与 Vision OCR 复核后修正正文 OCR 噪声。

@@ -1,0 +1,100 @@
+candidate_no,table_id,title_original,title_reviewed,pdf_page,status_reviewed,structure_reviewed,structure_confidence,content_confidence,page_image,review_notes
+001,表 1-1,表 1-1 不同人群谷苗类食物建议摄入量,表 1-1 不同人群谷薯类食物建议摄入量,018,converted,true,high,high,qa/table_page_images/page_018.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+002,表 1-4,表 1-4 不同食物搭配后蛋白质的生物价 ( BV ),表 1-4 不同食物搭配后蛋白质的生物价（BV）,020,converted,true,high,high,qa/table_page_images/page_020.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+003,表 1-5,表 1-5 ”人体必需营养素和其他膳食成分,表 1-5 人体必需营养素和其他膳食成分,023,converted,true,high,high,qa/table_page_images/page_023.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+004,表 1-6,表 1-6 中国成年人膳食宏量营养素供能比适宜范围,表 1-6 中国成年人膳食宏量营养素供能比适宜范围,024,converted,true,high,high,qa/table_page_images/page_024.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+005,表 1-7,表 1-7 不同种类食物中富含的营养素,表 1-7 不同种类食物中富含的营养素,024,converted,true,high,high,qa/table_page_images/page_024.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+006,表 1-7,续表（接 表 1-7）,续表 1-7 不同种类食物中富含的营养素,025,merged_continuation,true,high,high,qa/table_page_images/page_025.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+007,表 1-8,表 1-8 全国居民人均主要食品消费量,表 1-8 全国居民人均主要食品消费量,026,converted,true,high,high,qa/table_page_images/page_026.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+008,表 1-9,表 1-9 ”我国平均每标准人日各类食物摄入量,表 1-9 我国平均每标准人日各类食物摄入量,026,converted,true,high,high,qa/table_page_images/page_026.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+009,表 1-10,表 1-10 ”我国城乡居民膳食能量的食物来源比例,表 1-10 我国城乡居民膳食能量的食物来源比例,026,converted,true,high,high,qa/table_page_images/page_026.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+010,表 1-11,表 1-11 ”我国居民每标准人日腾食三大营养素平均报入量,表 1-11 我国居民每标准人日膳食三大营养素平均摄入量,028,converted,true,high,high,qa/table_page_images/page_028.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+011,表 1-14,表 1-14。,表 1-14。,042,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_042.png,正文引用“见表 1-14”，不是表题。
+012,表 1-14,表 1-14 ”推荐的成年人身体活动量,表 1-14 推荐的成年人身体活动量,042,merged_continuation,true,high,high,qa/table_page_images/page_042.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+013,表 1-16,表 1-16。 +,表 1-16 成年人每天身体活动量相当于快走 6000 步的活动时间,046,converted,true,high,high,qa/table_page_images/page_046.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+014,表 1-17,表1-17 ”可选择的运动方案,表 1-17 可选择的运动方案,048,converted,true,medium,medium,qa/table_page_images/page_048.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+015,表 1-18,表 1-18 ”成年男性、女性的健康体脂范围,表 1-18 成年男性、女性的健康体脂范围,050,converted,true,medium,medium,qa/table_page_images/page_050.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+016,表 1-19,表 1-19 ”体重与疾病关系的证据分析,表 1-19 体重与疾病关系的证据分析,054,converted,true,medium,medium,qa/table_page_images/page_054.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+017,表 1-21,表 1-21 运动强度的判断,表 1-21 运动强度的判断,059,converted,true,high,high,qa/table_page_images/page_059.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+018,表 1-22,表 1-22，不同人群蔬菜水果、全谷物、奶类、大豆、坚果类食物建议摄入量,表 1-22 不同人群蔬菜水果、全谷物、奶类、大豆、坚果类食物建议摄入量,062,converted,true,medium,medium,qa/table_page_images/page_062.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+019,表 1-23,表 1-23 ”常见蔬菜种类,表 1-23 常见蔬菜种类,065,converted,true,medium,medium,qa/table_page_images/page_065.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+020,表 1-24,表 1-24 日常全谷物营养成分与精制谷物的比较 ( B 100g 可食部 ),表 1-24 日常全谷物营养成分与精制谷物的比较（每 100g 可食部）,078,converted,true,medium,medium,qa/table_page_images/page_078.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+021,表 1-25,表1-25 300ml 牛奶提供的营养价值,表 1-25 300ml 牛奶提供的营养价值,079,converted,true,medium,medium,qa/table_page_images/page_079.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+022,表 1-26,"表 1-26，奶及奶制品、大豆及其制品、坚果与健康关系分析的证据见表 1-27,","表 1-26，奶及奶制品、大豆及其制品、坚果与健康关系分析的证据见表 1-27,",081,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_081.png,正文同时引用表 1-26 和表 1-27，不是独立表题。
+023,表 1-26,表 1-26， 蔬菜、水果与健康的关系,表 1-26 蔬菜、水果与健康的关系,081,merged_continuation,true,medium,medium,qa/table_page_images/page_081.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+024,表 1-26,续表（接 表 1-26）,续表 1-26 蔬菜、水果与健康的关系,082,merged_continuation,true,medium,medium,qa/table_page_images/page_082.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+025,表 1-27,表 1-27，奶类及其制品、大豆及其制品和坚果与健康的关系,表 1-27 奶类及其制品、大豆及其制品和坚果与健康的关系,082,converted,true,medium,medium,qa/table_page_images/page_082.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+026,表 1-28,表 1-28 各国腾食指南中成年人乳及乳制品的建议摄入量,表 1-28 各国膳食指南中成年人乳及乳制品的建议摄入量,088,converted,true,medium,medium,qa/table_page_images/page_088.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+027,表 1-31,表 1-31 ”常见动物性食物蛋白质含量比较 ( 每 100g TA),表 1-31 常见动物性食物蛋白质含量比较（每 100g 可食部）,096,converted,true,medium,medium,qa/table_page_images/page_096.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+028,表 1-32,表 1-32 ”常见鱼中EPA 和 DHA 含量,表 1-32 常见鱼中 EPA 和 DHA 含量,098,converted,true,medium,medium,qa/table_page_images/page_098.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+029,表 1-33,表 1-33，鸡量白和鸡蛋黄营养素含量比较,表 1-33 鸡蛋白和鸡蛋黄营养素含量比较,099,converted,true,medium,medium,qa/table_page_images/page_099.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+030,表 1-35,表1-35 ”常见动物性食物胆固醇含量 ( 每 100g 可食部 ),表 1-35 常见动物性食物胆固醇含量（每 100g 可食部）,105,converted,true,medium,medium,qa/table_page_images/page_105.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+031,表 1-37,表 1-37 ”鲍鱼和其他水产类食物主要营养素含量比较 ( 每 100g 可食部 ) Gj,表 1-37 鲍鱼和其他水产类食物主要营养素含量比较（每 100g 可食部）,107,converted,true,medium,medium,qa/table_page_images/page_107.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+032,表 1-38,表 1-38 AAR RAR. SUE. MEERA SBN EBAS y,表 1-38 不同人群食盐、烹调油、添加糖的推荐摄入量和酒精的控制摄入量,109,converted,true,high,high,qa/table_page_images/page_109.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+033,表 1-39,表 1-39 ”食用油的营养型分类,表 1-39 食用油的营养型分类,112,converted,true,medium,medium,qa/table_page_images/page_112.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+034,表 1-40,表 1-40 含有 159 酒精的不同酒量,表 1-40 含有 15g 酒精的不同酒量,114,converted,true,high,high,qa/table_page_images/page_114.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+035,表 1-41,"表 1.41 PELABSHVEAG VSIA, HUSA",表 1-41 我国居民烹调油、食盐和钠摄入量变化,116,converted,true,medium,medium,qa/table_page_images/page_116.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+036,表 1-42,表 1-42 2015一2017 年我国成年人饮酒率,表 1-42 2015-2017 年我国成年人饮酒率,119,converted,true,medium,medium,qa/table_page_images/page_119.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+037,表 1-43,表 1-43 2015一2017 年我国成年饮酒者每日酒精摄入水平分布 = f,表 1-43 2015-2017 年我国成年饮酒者每日酒精摄入水平分布,119,converted,true,medium,medium,qa/table_page_images/page_119.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+038,表 1-44,表 1-44 ，盐、油、酒、糖与人体健康的证据,表 1-44 盐、油、酒、糖与人体健康的证据,122,converted,true,medium,medium,qa/table_page_images/page_122.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+039,表 1-45,表 1-45 ”常见包装食品反式脂肪酸含量 人 y,表 1-45 常见包装食品反式脂肪酸含量,127,converted,true,medium,medium,qa/table_page_images/page_127.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+040,表 1-46,表 1-46 常见高盐 (WAS) 食品表 ( 每 100g ),表 1-46 常见高盐（钠）食品表（每 100g）,128,converted,true,medium,medium,qa/table_page_images/page_128.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+041,表 1-47,表 1-47。,表 1-47。,132,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_132.png,正文引用“表 1-47”，不是可见表格。
+042,表 1-48,表 1-48 ”零食推荐食用种类,表 1-48 零食推荐食用种类,134,converted,true,medium,medium,qa/table_page_images/page_134.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+043,表 1-49,表 1-49 ”饮水量与健康的证据体分析,表 1-49 饮水量与健康的证据体分析,146,converted,true,medium,medium,qa/table_page_images/page_146.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+044,表 1-51,表 1-51 ”正常成年人每天水的出入平衡量,表 1-51 正常成年人每天水的出入平衡量,150,converted,true,high,high,qa/table_page_images/page_150.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+045,表 1-52,表 1-52，茶的分类,表 1-52 茶的分类,150,converted,true,medium,medium,qa/table_page_images/page_150.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+046,表 1-54,表 1-54 ”平衡膳食宝塔的各类食物量 和,表 1-54 平衡膳食宝塔的各类食物量,153,converted,true,high,high,qa/table_page_images/page_153.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+047,表 1-55,表 1-55 各类食物提供的主要营养素,表 1-55 各类食物提供的主要营养素,155,converted,true,medium,medium,qa/table_page_images/page_155.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+048,表 1-56,表 1-56 ”不同年龄轻体力劳动者的能量需要量 ( EER ) 会,表 1-56 不同年龄轻体力劳动者的能量需要量（EER）,157,converted,true,medium,medium,qa/table_page_images/page_157.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+049,表 1-54,表 1-54 根据能量需求确定食物用量。 上,表 1-54 根据能量需求确定食物用量。 上,157,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_157.png,正文引用表 1-54，不是新表或续表。
+050,表 1-54,表 1-54 建议食用量作为参考，表示的 a,表 1-54 建议食用量作为参考，表示的 a,157,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_157.png,正文继续说明表 1-54，不是新表或续表。
+051,表 1-57,表 1-57 2.000kcal 能量的一日餐举例,表 1-57 2000kcal 能量的一日餐举例,159,converted,true,medium,medium,qa/table_page_images/page_159.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+052,表 1-58,表 1-58 ”建议“多吃”和“少吃”的食物举例,表 1-58 建议“多吃”和“少吃”的食物举例,161,converted,true,medium,medium,qa/table_page_images/page_161.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+053,表 1-59,"表 1-59, MEARNS EMSRARSRDPRI BH, A: RRA",表 1-59 烹饪对蔬菜中维生素 C 含量的影响,166,converted,true,medium,medium,qa/table_page_images/page_166.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+054,表 1-60,表 1-60 西餐中常见的牛肉成熟度和辨认方法,表 1-60 西餐中常见的牛肉成熟度和辨认方法,172,converted,true,medium,medium,qa/table_page_images/page_172.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+055,表 2-1,表 2-1 ”妊娠期妇女体重增长范围和妊娠中晚期周增重推荐值,表 2-1 妊娠期妇女体重增长范围和妊娠中晚期周增重推荐值,194,converted,true,high,high,qa/table_page_images/page_194.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+056,表 2-2,表 2-2 孕中、晚期一日食谱举例 * L,表 2-2 孕中、晚期一日食谱举例,195,converted,true,medium,medium,qa/table_page_images/page_195.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+057,表 2-2,续表（接 表 2-2）,续表 2-2 孕中、晚期一日食谱举例,196,merged_continuation,true,medium,medium,qa/table_page_images/page_196.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+058,表 2-3,表 2.3 ”妇女备孕和孕期一日食物推荐量( 低至中度身体活动水平) a,表 2-3 妇女备孕和孕期一日食物推荐量（低至中度身体活动水平）,197,converted,true,high,high,qa/table_page_images/page_197.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+059,表 2-4,表2-4 乳母一天食谱举例 (能量2 250kcal/d ),表 2-4 乳母一天食谱举例（能量 2250kcal/d）,202,converted,true,medium,medium,qa/table_page_images/page_202.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+060,表 2-6,表2-6 获得1000mg 钙的食物组合,表 2-6 获得 1000mg 钙的食物组合,204,converted,true,high,high,qa/table_page_images/page_204.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+061,表 2-7,表 2-7。,表 2-7。,212,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_212.png,正文引用“表 2-7”，不是表题。
+062,表 2-7,表2-7 ”吸出母乳的保存条件和人允许保存时间,表 2-7 吸出母乳的保存条件和允许保存时间,212,merged_continuation,true,high,high,qa/table_page_images/page_212.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+063,表 2-9,表 2.9。,表 2.9。,260,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_260.png,正文引用“表 2-9”，不是表题。
+064,表 2-8,表 2-8 ”学龄前儿童每日各类食物建议摄入量,表 2-8 学龄前儿童每日各类食物建议摄入量,261,converted,true,high,high,qa/table_page_images/page_261.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+065,表 2-9,表2-9 一日食谱举例 1,表 2-9 一日食谱举例,261,merged_continuation,true,medium,medium,qa/table_page_images/page_261.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+066,表 2-10,表2.10 “推荐和限制的夫食 l,表 2-10 推荐和限制的零食,263,converted,true,medium,medium,qa/table_page_images/page_263.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+067,表 2-11,表 2-11。,表 2-11。,272,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_272.png,正文引用“表 2-11”，不是表题。
+068,表 2-11,表 2-11 学龄儿童一周身体活动示例,表 2-11 学龄儿童一周身体活动示例,273,merged_continuation,true,high,high,qa/table_page_images/page_273.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+069,表 2-12,表 2-12。应综合分析摄食情况、消化吸收能力、体格检查、人体测量、体成,表 2-12。应综合分析摄食情况、消化吸收能力、体格检查、人体测量、体成,287,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_287.png,正文引用“见表 2-12”，不是表题。
+070,表 2-12,表 2-12 ”微型营养评估简表 ( MNA-SF ),表 2-12 微型营养评估简表（MNA-SF）,287,merged_continuation,true,high,high,qa/table_page_images/page_287.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+071,表 2-13,表2-13 Freid 衰弱评估方法,表 2-13 Fried 衰弱评估方法,288,converted,true,high,high,qa/table_page_images/page_288.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+072,表 2-14,表 2-14。 ae,表 2-14。 ae,289,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_289.png,正文引用“表 2-14”，不是表题。
+073,表 2-14,表 2-14 ”饮水试验及结果判断,表 2-14 饮水试验及结果判断,289,merged_continuation,true,high,high,qa/table_page_images/page_289.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+074,表 2-15,表 2.15 高龄老年人一周活动举例,表 2-15 高龄老年人一周活动举例,290,converted,true,high,high,qa/table_page_images/page_290.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+075,表 2-16,表 2-16 ”全素和蛋奶素成年人的推荐膳食组成,表 2-16 全素和蛋奶素成年人的推荐膳食组成,294,converted,true,high,high,qa/table_page_images/page_294.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+076,表 2-16,续表（接 表 2-16）,续表 2-16 全素和蛋奶素成年人的推荐膳食组成,295,merged_continuation,true,high,high,qa/table_page_images/page_295.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+077,表 3-1,表3-1)。,表3-1)。,308,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_308.png,正文引用“表 3-1”，不是表题。
+078,表 3-1,表 3-1 “食物与健康文献证据综合评价表,表 3-1 食物与健康文献证据综合评价表,308,merged_continuation,true,high,high,qa/table_page_images/page_308.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+079,表 3-3,表 3-3 常见腾食定性术语和概念描述,表 3-3 常见膳食定性术语和概念描述,311,converted,true,medium,medium,qa/table_page_images/page_311.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+080,表 3-4,表 3-4 ”常见食物定性和定量描述,表 3-4 常见食物定性和定量描述,312,converted,true,medium,medium,qa/table_page_images/page_312.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+081,表 3-4,续表（接 表 3-4）,续表 3-4 常见食物定性和定量描述,313,merged_continuation,true,medium,medium,qa/table_page_images/page_313.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+082,表 3-5,表3-5 提供了 2 岁以上所有健康人群平衡腾食的食物组成，按照表 3-5，计算理想,表3-5 提供了 2 岁以上所有健康人群平衡腾食的食物组成，按照表 3-5，计算理想,317,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_317.png,正文引用表 3-5 和表 3-6，不是独立表题。
+083,表 3-6,表 3-6 不同能量需要水平下的平衔膳食模式所提供的能量和营养素 和 ，,表 3-6 不同能量需要水平下的平衡膳食模式所提供的能量和营养素,317,converted,true,medium,medium,qa/table_page_images/page_317.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+084,表 3-7,表 3-7，不同能量需要水平的平衡腾食模式所提供能量和来源构成比,表 3-7 不同能量需要水平的平衡膳食模式所提供能量和来源构成比,318,converted,true,high,high,qa/table_page_images/page_318.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+085,表 3-7,续表（接 表 3-7）,续表 一日三餐举例（2250kcal）,329,merged_continuation,true,medium,medium,qa/table_page_images/page_329.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+086,表 3-7,续表（接 表 3-7）,续表 一日三餐举例（2400kcal）,331,merged_continuation,true,medium,medium,qa/table_page_images/page_331.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+087,表 3-7,续表（接 表 3-7）,续表 一日三餐举例（2250kcal）,335,merged_continuation,true,medium,medium,qa/table_page_images/page_335.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+088,表 3-7,续表（接 表 3-7）,续表 一日三餐举例（2300kcal）,337,merged_continuation,true,medium,medium,qa/table_page_images/page_337.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+089,附表 1-1,附表 1-1 常见食物的标准份量 ( 以可食部计),附表 1-1 常见食物的标准份量（以可食部计）,348,converted,true,medium,medium,qa/table_page_images/page_348.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+090,附表 1-3,附表 1-3 和附表 1-4. ;,附表 1-3 和附表 1-4. ;,349,not_a_table_after_review,true,high,n/a,qa/table_page_images/page_349.png,正文引用附表 1-2、附表 1-3 和附表 1-4，不是表题。
+091,附表 十2,附表十2 “标准物品定义和用和途 ig,附表 1-2 标准物品定义和用途,349,converted,true,medium,medium,qa/table_page_images/page_349.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+092,附表 1-3,附表 1-3 ”参考手势的定义和用途,附表 1-3 参考手势的定义和用途,350,merged_continuation,true,medium,medium,qa/table_page_images/page_350.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+093,附表 1-4,附表 1-4 ，食物标准份量示意图,附表 1-4 食物标准份量示意图,351,converted,true,medium,medium,qa/table_page_images/page_351.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+094,附表 1-4,续表（接 附表 1-4）,续附表 1-4 食物标准份量示意图,352,merged_continuation,true,medium,medium,qa/table_page_images/page_352.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+095,附表 1-4,续表（接 附表 1-4）,续附表 1-4 食物标准份量示意图,353,merged_continuation,true,medium,medium,qa/table_page_images/page_353.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+096,附表 2-1,附表 2-1 ”中国居民膳食能量需要量 ( EER )、宏量营养素可接受范围 ( AMDR )、蛋白质推荐摄入量 (RNI),附表 2-1 中国居民膳食能量需要量（EER）、宏量营养素可接受范围（AMDR）、蛋白质推荐摄入量（RNI）,354,converted,true,medium,medium,qa/table_page_images/page_354.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+097,附表 5-1,附表 5-1 FRSA 6~18 岁学龄儿童青少年生长迟缓的年龄别身高的界值范围,附表 5-1 6-18 岁学龄儿童青少年生长迟缓的年龄别身高界值范围,361,converted,true,medium,medium,qa/table_page_images/page_361.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+098,附表 5-2,附表 5-2 FA URES 6~18 岁学龄儿童青少年营养状况的 BMI 界值范围,附表 5-2 6-18 岁学龄儿童青少年营养状况的 BMI 界值范围,362,converted,true,medium,medium,qa/table_page_images/page_362.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。
+099,附表 5-4,附表 5-4 ”用于筛查 7~18 岁学龄儿童青少年高腰围的界值范围,附表 5-4 用于筛查 7-18 岁学龄儿童青少年高腰围的界值范围,364,converted,true,medium,medium,qa/table_page_images/page_364.png,按渲染页图复核表题和列结构；OCR 疑难字未全部做出版级逐字校订。

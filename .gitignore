@@ -1,0 +1,19 @@
+.DS_Store
+
+# Python and local build artifacts
+__pycache__/
+*.py[cod]
+
+# Local OCR runtime data
+.ocr_tessdata/
+
+# Large binary source/evidence files kept outside normal git history.
+# If this repository is later pushed to a remote, add these through Git LFS first.
+1711104221187059.pdf
+*.pdf
+
+# Regenerable page images and binary review crops
+qa/body_page_images/
+qa/table_page_images/
+qa/manual_table_crops/
+*.png

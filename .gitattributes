@@ -1,0 +1,6 @@
+*.md text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.tsv text eol=lf
+*.py text eol=lf
+*.swift text eol=lf

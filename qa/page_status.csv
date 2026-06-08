@@ -1,0 +1,375 @@
+pdf_page,section,has_text,has_table,table_ids,confidence,notes
+001,封面、版权和可视化图示,True,False,,low,
+002,封面、版权和可视化图示,True,False,,low,
+003,封面、版权和可视化图示,True,False,,low,
+004,封面、版权和可视化图示,True,False,,low,
+005,前言与编写说明,True,False,,low,
+006,前言与编写说明,True,False,,high,
+007,前言与编写说明,True,False,,medium,腾食:5
+008,前言与编写说明,True,False,,high,
+009,平衡膳食准则概览与目录,True,False,,high,
+010,平衡膳食准则概览与目录,True,False,,high,训调:1
+011,平衡膳食准则概览与目录,True,False,,medium,公策:2
+012,平衡膳食准则概览与目录,True,False,,low,腾食:4
+013,平衡膳食准则概览与目录,True,False,,high,
+014,第一部分 一般人群膳食指南,True,False,,low,
+015,第一部分 一般人群膳食指南,True,False,,low,公策:1
+016,第一部分 一般人群膳食指南,True,False,,medium,腾食:2
+017,准则一 食物多样，合理搭配,True,False,,low,腾食:8;摄和:1
+018,准则一 食物多样，合理搭配,True,True,表 1-1,medium,腾食:2;报信:1
+019,准则一 食物多样，合理搭配,True,False,,low,腾食:7;摄和:3;豪调:2
+020,准则一 食物多样，合理搭配,True,True,表 1-4,high,腾食:2
+021,准则一 食物多样，合理搭配,True,False,,high,
+022,准则一 食物多样，合理搭配,True,False,,high,腾食:1
+023,准则一 食物多样，合理搭配,True,True,表 1-5,medium,腾食:2
+024,准则一 食物多样，合理搭配,True,True,表 1-6;表 1-7,medium,腾食:1;报信:1
+025,准则一 食物多样，合理搭配,True,True,表 1-7,medium,腾食:4
+026,准则一 食物多样，合理搭配,True,True,表 1-8;表 1-9;表 1-10,low,
+027,准则一 食物多样，合理搭配,True,False,,medium,摄和:2
+028,准则一 食物多样，合理搭配,True,True,表 1-11,low,腾食:9;摄和:3
+029,准则一 食物多样，合理搭配,True,False,,high,腾食:1
+030,准则一 食物多样，合理搭配,True,False,,high,腾食:2
+031,准则一 食物多样，合理搭配,True,False,,low,腾食:12;摄和:1
+032,准则一 食物多样，合理搭配,True,False,,high,摄和:2
+033,准则一 食物多样，合理搭配,True,False,,medium,腾食:8
+034,准则一 食物多样，合理搭配,True,False,,medium,摄和:2
+035,准则一 食物多样，合理搭配,True,False,,high,摄和:2
+036,准则一 食物多样，合理搭配,True,False,,medium,摄和:6
+037,准则一 食物多样，合理搭配,True,False,,medium,腾食:2;摄和:1;报信:1
+038,准则一 食物多样，合理搭配,True,False,,high,腾食:2;摄和:1
+039,准则一 食物多样，合理搭配,True,False,,medium,腾食:1
+040,准则一 食物多样，合理搭配,True,False,,medium,腾食:6
+041,准则二 吃动平衡，健康体重,True,False,,medium,
+042,准则二 吃动平衡，健康体重,True,True,表 1-14,high,摄和:1;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+043,准则二 吃动平衡，健康体重,True,False,,high,kgjm:1
+044,准则二 吃动平衡，健康体重,True,False,,medium,摄和:1
+045,准则二 吃动平衡，健康体重,True,False,,high,摄和:2
+046,准则二 吃动平衡，健康体重,True,True,表 1-16,high,
+047,准则二 吃动平衡，健康体重,True,False,,high,
+048,准则二 吃动平衡，健康体重,True,True,表 1-17,high,
+049,准则二 吃动平衡，健康体重,True,False,,high,
+050,准则二 吃动平衡，健康体重,True,True,表 1-18,high,腾食:1;摄和:1
+051,准则二 吃动平衡，健康体重,True,False,,high,
+052,准则二 吃动平衡，健康体重,True,False,,low,
+053,准则二 吃动平衡，健康体重,True,False,,medium,
+054,准则二 吃动平衡，健康体重,True,True,表 1-19,high,
+055,准则二 吃动平衡，健康体重,True,False,,medium,kgjm:1
+056,准则二 吃动平衡，健康体重,True,False,,medium,
+057,准则二 吃动平衡，健康体重,True,False,,high,
+058,准则二 吃动平衡，健康体重,True,False,,high,
+059,准则二 吃动平衡，健康体重,True,True,表 1-21,high,
+060,准则二 吃动平衡，健康体重,True,False,,high,
+061,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,low,腾食:4;摄和:2
+062,准则三 多吃蔬果、奶类、全谷、大豆,True,True,表 1-22,medium,腾食:1;摄和:3;报信:1
+063,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,low,
+064,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,high,腾食:1
+065,准则三 多吃蔬果、奶类、全谷、大豆,True,True,表 1-23,medium,
+066,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,high,腾食:1;摄和:1
+067,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,high,腾食:1;摄和:1
+068,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,high,
+069,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,high,
+070,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,high,腾食:2
+071,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,腾食:2
+072,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,腾食:1;摄和:1;报信:1
+073,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,low,
+074,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,low,
+075,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,摄和:1
+076,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,腾食:3
+077,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,
+078,准则三 多吃蔬果、奶类、全谷、大豆,True,True,表 1-24,medium,
+079,准则三 多吃蔬果、奶类、全谷、大豆,True,True,表 1-25,medium,
+080,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,high,腾食:1;摄和:1
+081,准则三 多吃蔬果、奶类、全谷、大豆,True,True,表 1-26,high,摄和:2;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+082,准则三 多吃蔬果、奶类、全谷、大豆,True,True,表 1-26;表 1-27,medium,摄和:1
+083,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,摄和:2
+084,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,摄和:5
+085,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,摄和:6
+086,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,medium,摄和:4
+087,准则三 多吃蔬果、奶类、全谷、大豆,True,False,,high,腾食:2
+088,准则三 多吃蔬果、奶类、全谷、大豆,True,True,表 1-28,medium,腾食:4
+089,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,high,
+090,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,报信:1
+091,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,
+092,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,high,
+093,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,
+094,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,high,腾食:1;报信:1
+095,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,摄和:1
+096,准则四 适量吃鱼、禽、蛋、瘦肉,True,True,表 1-31,low,
+097,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,high,
+098,准则四 适量吃鱼、禽、蛋、瘦肉,True,True,表 1-32,high,
+099,准则四 适量吃鱼、禽、蛋、瘦肉,True,True,表 1-33,low,腾食:1
+100,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,high,摄和:1
+101,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,摄和:5;报信:1
+102,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,摄和:4
+103,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,摄和:4
+104,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,腾食:6
+105,准则四 适量吃鱼、禽、蛋、瘦肉,True,True,表 1-35,high,
+106,准则四 适量吃鱼、禽、蛋、瘦肉,True,False,,medium,
+107,准则四 适量吃鱼、禽、蛋、瘦肉,True,True,表 1-37,low,
+108,准则五 少盐少油，控糖限酒,True,False,,low,腾食:1;摄和:1;报信:1;训调:2;豪调:1
+109,准则五 少盐少油，控糖限酒,True,True,表 1-38,high,训调:1
+110,准则五 少盐少油，控糖限酒,True,False,,medium,
+111,准则五 少盐少油，控糖限酒,True,False,,medium,腾食:1;训调:1
+112,准则五 少盐少油，控糖限酒,True,True,表 1-39,medium,报信:2;训调:1
+113,准则五 少盐少油，控糖限酒,True,False,,low,
+114,准则五 少盐少油，控糖限酒,True,True,表 1-40,high,
+115,准则五 少盐少油，控糖限酒,True,False,,medium,摄和:1
+116,准则五 少盐少油，控糖限酒,True,True,表 1-41,medium,摄和:2;训调:2;豪调:2
+117,准则五 少盐少油，控糖限酒,True,False,,medium,摄和:2
+118,准则五 少盐少油，控糖限酒,True,False,,low,
+119,准则五 少盐少油，控糖限酒,True,True,表 1-42;表 1-43,low,摄和:2
+120,准则五 少盐少油，控糖限酒,True,False,,medium,摄和:2;报信:1;豪调:1
+121,准则五 少盐少油，控糖限酒,True,False,,medium,腾食:1;摄和:1
+122,准则五 少盐少油，控糖限酒,True,True,表 1-44,high,
+123,准则五 少盐少油，控糖限酒,True,False,,medium,摄和:6;报信:1
+124,准则五 少盐少油，控糖限酒,True,False,,medium,摄和:2
+125,准则五 少盐少油，控糖限酒,True,False,,medium,摄和:2
+126,准则五 少盐少油，控糖限酒,True,False,,high,
+127,准则五 少盐少油，控糖限酒,True,True,表 1-45,medium,腾食:6
+128,准则五 少盐少油，控糖限酒,True,True,表 1-46,low,
+129,准则五 少盐少油，控糖限酒,True,False,,low,
+130,准则六 规律进餐，足量饮水,True,False,,medium,摄和:1;报信:1
+131,准则六 规律进餐，足量饮水,True,False,,medium,腾食:2;摄和:2
+132,准则六 规律进餐，足量饮水,True,False,,high,摄和:3;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+133,准则六 规律进餐，足量饮水,True,False,,high,训调:1
+134,准则六 规律进餐，足量饮水,True,True,表 1-48,high,腾食:1;报信:1
+135,准则六 规律进餐，足量饮水,True,False,,high,摄和:1
+136,准则六 规律进餐，足量饮水,True,False,,high,腾食:1;摄和:1
+137,准则六 规律进餐，足量饮水,True,False,,medium,摄和:3
+138,准则六 规律进餐，足量饮水,True,False,,high,
+139,准则六 规律进餐，足量饮水,True,False,,high,报信:2
+140,准则六 规律进餐，足量饮水,True,False,,high,
+141,准则六 规律进餐，足量饮水,True,False,,high,摄和:1
+142,准则六 规律进餐，足量饮水,True,False,,high,
+143,准则六 规律进餐，足量饮水,True,False,,medium,
+144,准则六 规律进餐，足量饮水,True,False,,high,摄和:2
+145,准则六 规律进餐，足量饮水,True,False,,medium,摄和:5
+146,准则六 规律进餐，足量饮水,True,True,表 1-49,high,
+147,准则六 规律进餐，足量饮水,True,False,,high,摄和:1
+148,准则六 规律进餐，足量饮水,True,False,,high,
+149,准则六 规律进餐，足量饮水,True,False,,medium,
+150,准则六 规律进餐，足量饮水,True,True,表 1-51;表 1-52,high,
+151,准则六 规律进餐，足量饮水,True,False,,low,
+152,准则七 会烹会选，会看标签,True,False,,medium,腾食:1;豪调:1
+153,准则七 会烹会选，会看标签,True,True,表 1-54,medium,腾食:1
+154,准则七 会烹会选，会看标签,True,False,,high,腾食:2
+155,准则七 会烹会选，会看标签,True,True,表 1-55,medium,腾食:1
+156,准则七 会烹会选，会看标签,True,False,,medium,腾食:5
+157,准则七 会烹会选，会看标签,True,True,表 1-56,medium,训调:1;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+158,准则七 会烹会选，会看标签,True,False,,medium,腾食:2;报信:1
+159,准则七 会烹会选，会看标签,True,True,表 1-57,low,
+160,准则七 会烹会选，会看标签,True,False,,medium,摄和:1;训调:2;豪调:1
+161,准则七 会烹会选，会看标签,True,True,表 1-58,low,
+162,准则七 会烹会选，会看标签,True,False,,high,腾食:1;摄和:1
+163,准则七 会烹会选，会看标签,True,False,,high,摄和:1
+164,准则七 会烹会选，会看标签,True,False,,high,腾食:1
+165,准则七 会烹会选，会看标签,True,False,,medium,腾食:7
+166,准则七 会烹会选，会看标签,True,True,表 1-59,high,豪调:1
+167,准则七 会烹会选，会看标签,True,False,,high,
+168,准则八 公筷分餐，杜绝浪费,True,False,,medium,公策:2
+169,准则八 公筷分餐，杜绝浪费,True,False,,high,
+170,准则八 公筷分餐，杜绝浪费,True,False,,high,
+171,准则八 公筷分餐，杜绝浪费,True,False,,high,
+172,准则八 公筷分餐，杜绝浪费,True,True,表 1-60,medium,训调:1;豪调:2
+173,准则八 公筷分餐，杜绝浪费,True,False,,high,
+174,准则八 公筷分餐，杜绝浪费,True,False,,high,
+175,准则八 公筷分餐，杜绝浪费,True,False,,medium,公策:4
+176,准则八 公筷分餐，杜绝浪费,True,False,,medium,公策:2;训调:1
+177,准则八 公筷分餐，杜绝浪费,True,False,,high,公策:1
+178,准则八 公筷分餐，杜绝浪费,True,False,,high,腾食:1
+179,准则八 公筷分餐，杜绝浪费,True,False,,high,
+180,准则八 公筷分餐，杜绝浪费,True,False,,high,公策:1
+181,准则八 公筷分餐，杜绝浪费,True,False,,high,腾食:1
+182,准则八 公筷分餐，杜绝浪费,True,False,,high,
+183,准则八 公筷分餐，杜绝浪费,True,False,,high,
+184,准则八 公筷分餐，杜绝浪费,True,False,,high,腾食:1
+185,准则八 公筷分餐，杜绝浪费,True,False,,high,腾食:1
+186,准则八 公筷分餐，杜绝浪费,True,False,,medium,腾食:4
+187,准则八 公筷分餐，杜绝浪费,True,False,,high,腾食:1;摄和:2
+188,准则八 公筷分餐，杜绝浪费,True,False,,high,
+189,准则八 公筷分餐，杜绝浪费,True,False,,high,
+190,准则八 公筷分餐，杜绝浪费,True,False,,low,
+191,备孕和孕期妇女膳食指南,True,False,,medium,腾食:2
+192,备孕和孕期妇女膳食指南,True,False,,medium,腾食:3
+193,备孕和孕期妇女膳食指南,True,False,,medium,腾食:4;摄和:1;kgjm:1
+194,备孕和孕期妇女膳食指南,True,True,表 2-1,low,腾食:1
+195,备孕和孕期妇女膳食指南,True,True,表 2-2,high,腾食:1;摄和:2
+196,备孕和孕期妇女膳食指南,True,True,表 2-2,medium,腾食:1
+197,备孕和孕期妇女膳食指南,True,True,表 2-3,medium,摄和:1
+198,备孕和孕期妇女膳食指南,True,False,,high,摄和:2
+199,备孕和孕期妇女膳食指南,True,False,,high,
+200,哺乳期妇女膳食指南,True,False,,medium,腾食:2;摄和:3;鼠烟:1
+201,哺乳期妇女膳食指南,True,False,,medium,腾食:2;摄和:1
+202,哺乳期妇女膳食指南,True,True,表 2-4,medium,摄和:1
+203,哺乳期妇女膳食指南,True,False,,medium,腾食:2;摄和:1
+204,哺乳期妇女膳食指南,True,True,表 2-6,high,
+205,哺乳期妇女膳食指南,True,False,,high,腾食:3
+206,哺乳期妇女膳食指南,True,False,,high,
+207,哺乳期妇女膳食指南,True,False,,high,
+208,0-6 月龄婴儿母乳喂养指南,True,False,,high,腾食:1
+209,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+210,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+211,0-6 月龄婴儿母乳喂养指南,True,False,,medium,
+212,0-6 月龄婴儿母乳喂养指南,True,True,表 2-7,high,腾食:1;摄和:1;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+213,0-6 月龄婴儿母乳喂养指南,True,False,,high,腾食:2
+214,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+215,0-6 月龄婴儿母乳喂养指南,True,False,,medium,
+216,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+217,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+218,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+219,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+220,0-6 月龄婴儿母乳喂养指南,True,False,,high,报信:1
+221,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+222,0-6 月龄婴儿母乳喂养指南,True,False,,high,摄和:1
+223,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+224,0-6 月龄婴儿母乳喂养指南,True,False,,high,腾食:1
+225,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+226,0-6 月龄婴儿母乳喂养指南,True,False,,high,腾食:1
+227,0-6 月龄婴儿母乳喂养指南,True,False,,high,摄和:1
+228,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+229,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+230,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+231,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+232,0-6 月龄婴儿母乳喂养指南,True,False,,high,
+233,7-24 月龄婴幼儿喂养指南,True,False,,high,
+234,7-24 月龄婴幼儿喂养指南,True,False,,high,
+235,7-24 月龄婴幼儿喂养指南,True,False,,high,
+236,7-24 月龄婴幼儿喂养指南,True,False,,high,
+237,7-24 月龄婴幼儿喂养指南,True,False,,high,腾食:1
+238,7-24 月龄婴幼儿喂养指南,True,False,,high,
+239,7-24 月龄婴幼儿喂养指南,True,False,,high,
+240,7-24 月龄婴幼儿喂养指南,True,False,,high,
+241,7-24 月龄婴幼儿喂养指南,True,False,,high,
+242,7-24 月龄婴幼儿喂养指南,True,False,,high,
+243,7-24 月龄婴幼儿喂养指南,True,False,,high,腾食:1;BERE:1
+244,7-24 月龄婴幼儿喂养指南,True,False,,medium,腾食:1
+245,7-24 月龄婴幼儿喂养指南,True,False,,high,BERE:1
+246,7-24 月龄婴幼儿喂养指南,True,False,,high,腾食:2
+247,7-24 月龄婴幼儿喂养指南,True,False,,medium,摄和:1
+248,7-24 月龄婴幼儿喂养指南,True,False,,high,
+249,7-24 月龄婴幼儿喂养指南,True,False,,high,
+250,7-24 月龄婴幼儿喂养指南,True,False,,high,腾食:2
+251,7-24 月龄婴幼儿喂养指南,True,False,,high,
+252,7-24 月龄婴幼儿喂养指南,True,False,,medium,
+253,7-24 月龄婴幼儿喂养指南,True,False,,high,
+254,7-24 月龄婴幼儿喂养指南,True,False,,high,
+255,7-24 月龄婴幼儿喂养指南,True,False,,medium,
+256,7-24 月龄婴幼儿喂养指南,True,False,,high,摄和:1
+257,7-24 月龄婴幼儿喂养指南,True,False,,high,
+258,7-24 月龄婴幼儿喂养指南,True,False,,medium,腾食:1;豪调:1
+259,学龄前儿童膳食指南,True,False,,medium,腾食:4;摄和:1
+260,学龄前儿童膳食指南,True,False,,medium,腾食:3;训调:1;豪调:2;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+261,学龄前儿童膳食指南,True,True,表 2-8;表 2-9,low,
+262,学龄前儿童膳食指南,True,False,,high,摄和:1
+263,学龄前儿童膳食指南,True,True,表 2-10,medium,腾食:1
+264,学龄前儿童膳食指南,True,False,,high,
+265,学龄前儿童膳食指南,True,False,,high,腾食:3
+266,学龄儿童膳食指南,True,False,,high,腾食:1
+267,学龄儿童膳食指南,True,False,,high,腾食:2
+268,学龄儿童膳食指南,True,False,,high,腾食:1;训调:1
+269,学龄儿童膳食指南,True,False,,high,
+270,学龄儿童膳食指南,True,False,,high,摄和:1
+271,学龄儿童膳食指南,True,False,,high,
+272,学龄儿童膳食指南,True,False,,high,table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+273,学龄儿童膳食指南,True,True,表 2-11,high,
+274,学龄儿童膳食指南,True,False,,high,腾食:1
+275,学龄儿童膳食指南,True,False,,high,腾食:1;摄和:1
+276,一般老年人膳食指南,True,False,,high,
+277,一般老年人膳食指南,True,False,,high,腾食:1;摄和:1
+278,一般老年人膳食指南,True,False,,high,
+279,一般老年人膳食指南,True,False,,high,
+280,一般老年人膳食指南,True,False,,high,
+281,一般老年人膳食指南,True,False,,medium,摄和:2
+282,一般老年人膳食指南,True,False,,high,
+283,一般老年人膳食指南,True,False,,medium,腾食:4
+284,高龄老年人膳食指南,True,False,,medium,腾食:1;摄和:1
+285,高龄老年人膳食指南,True,False,,medium,腾食:2;摄和:4
+286,高龄老年人膳食指南,True,False,,high,豪调:2
+287,高龄老年人膳食指南,True,True,表 2-12,high,table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+288,高龄老年人膳食指南,True,True,表 2-13,medium,报信:1
+289,高龄老年人膳食指南,True,True,表 2-14,high,腾食:1;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+290,高龄老年人膳食指南,True,True,表 2-15,high,
+291,高龄老年人膳食指南,True,False,,high,
+292,高龄老年人膳食指南,True,False,,high,
+293,素食人群膳食指南,True,False,,high,腾食:2
+294,素食人群膳食指南,True,True,表 2-16,low,腾食:4;摄和:1
+295,素食人群膳食指南,True,True,表 2-16,medium,腾食:2;摄和:2
+296,素食人群膳食指南,True,False,,high,BERE:1
+297,素食人群膳食指南,True,False,,low,
+298,素食人群膳食指南,True,False,,medium,
+299,素食人群膳食指南,True,False,,high,
+300,素食人群膳食指南,True,False,,medium,腾食:5
+301,素食人群膳食指南,True,False,,medium,腾食:2
+302,素食人群膳食指南,True,False,,low,
+303,素食人群膳食指南,True,False,,medium,
+304,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:6
+305,第三部分 平衡膳食模式和编写说明,True,False,,low,腾食:14
+306,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:2;公策:1;豪调:1
+307,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:5
+308,第三部分 平衡膳食模式和编写说明,True,True,表 3-1,high,table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+309,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:5
+310,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:2
+311,第三部分 平衡膳食模式和编写说明,True,True,表 3-3,medium,腾食:7
+312,第三部分 平衡膳食模式和编写说明,True,True,表 3-4,high,腾食:3
+313,第三部分 平衡膳食模式和编写说明,True,True,表 3-4,high,腾食:2
+314,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:2;摄和:2
+315,第三部分 平衡膳食模式和编写说明,True,False,,low,腾食:13;报信:1
+316,第三部分 平衡膳食模式和编写说明,True,False,,low,腾食:1
+317,第三部分 平衡膳食模式和编写说明,True,True,表 3-6,medium,腾食:2;摄和:1;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+318,第三部分 平衡膳食模式和编写说明,True,True,表 3-7,medium,腾食:2
+319,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:7
+320,第三部分 平衡膳食模式和编写说明,True,False,,medium,
+321,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:4;摄和:1;报信:1
+322,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:3;摄和:4;训调:1
+323,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:6
+324,第三部分 平衡膳食模式和编写说明,True,False,,low,腾食:6
+325,第三部分 平衡膳食模式和编写说明,True,False,,low,腾食:8;公策:2
+326,第三部分 平衡膳食模式和编写说明,True,False,,medium,
+327,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:1
+328,第三部分 平衡膳食模式和编写说明,True,False,,medium,
+329,第三部分 平衡膳食模式和编写说明,True,True,表 3-7,medium,腾食:1
+330,第三部分 平衡膳食模式和编写说明,True,False,,low,腾食:1
+331,第三部分 平衡膳食模式和编写说明,True,True,表 3-7,low,
+332,第三部分 平衡膳食模式和编写说明,True,False,,medium,
+333,第三部分 平衡膳食模式和编写说明,True,False,,low,
+334,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:1
+335,第三部分 平衡膳食模式和编写说明,True,True,表 3-7,medium,
+336,第三部分 平衡膳食模式和编写说明,True,False,,low,
+337,第三部分 平衡膳食模式和编写说明,True,True,表 3-7,medium,腾食:2
+338,第三部分 平衡膳食模式和编写说明,True,False,,medium,
+339,第三部分 平衡膳食模式和编写说明,True,False,,medium,腾食:1
+340,第三部分 平衡膳食模式和编写说明,True,False,,medium,
+341,第三部分 平衡膳食模式和编写说明,True,False,,medium,
+342,第三部分 平衡膳食模式和编写说明,True,False,,low,
+343,第三部分 平衡膳食模式和编写说明,True,False,,low,
+344,第三部分 平衡膳食模式和编写说明,True,False,,low,
+345,第三部分 平衡膳食模式和编写说明,True,False,,low,
+346,第三部分 平衡膳食模式和编写说明,True,False,,low,
+347,附录一 常见食物的份量,True,False,,medium,腾食:2
+348,附录一 常见食物的份量,True,True,附表 1-1,medium,
+349,附录一 常见食物的份量,True,True,附表 十2,medium,table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed;table_false_positive_reviewed
+350,附录一 常见食物的份量,True,True,附表 1-3,medium,
+351,附录一 常见食物的份量,True,True,附表 1-4,low,
+352,附录一 常见食物的份量,True,True,附表 1-4,low,
+353,附录一 常见食物的份量,True,True,附表 1-4,low,
+354,附录二 膳食营养素参考摄入量,True,True,附表 2-1,low,
+355,附录二 膳食营养素参考摄入量,True,False,,low,
+356,附录二 膳食营养素参考摄入量,True,False,,low,
+357,附录三至附录四,True,False,,low,
+358,附录三至附录四,True,False,,low,
+359,附录三至附录四,True,False,,low,
+360,附录三至附录四,True,False,,low,
+361,附录五 儿童青少年体格发育标准,True,True,附表 5-1,low,
+362,附录五 儿童青少年体格发育标准,True,True,附表 5-2,low,
+363,附录五 儿童青少年体格发育标准,True,False,,low,
+364,附录五 儿童青少年体格发育标准,True,True,附表 5-4,low,
+365,附录六 成人 BMI 与健康体重对应关系,True,False,,low,
+366,主要参考文献,True,False,,low,
+367,主要参考文献,True,False,,low,
+368,主要参考文献,True,False,,low,
+369,主要参考文献,True,False,,low,
+370,主要参考文献,True,False,,low,
+371,主要参考文献,True,False,,low,
+372,主要参考文献,True,False,,low,
+373,主要参考文献,True,False,,low,
+374,主要参考文献,True,False,,low,
