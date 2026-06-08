@@ -91,11 +91,29 @@ Use this internal structure when presenting analysis to the user. It does not ne
     {"topic": "vegetables", "evidence": "few vegetable entries", "confidence": "medium"},
     {"topic": "dairy", "evidence": "milk logged on 2 of 5 days", "confidence": "medium"}
   ],
+  "relative_calculations": [
+    {
+      "topic": "dairy",
+      "observed": "milk logged on 2 of 5 recorded days",
+      "reference_anchor": "adult dairy 300-500 g/day",
+      "relative_position": "frequency appears low against a daily dairy anchor",
+      "calculation_note": "Portion totals are not reliable because several records lack grams.",
+      "confidence": "medium"
+    }
+  ],
   "principle_comparison": [
     {"principle": "adult dairy 300-500 g/day", "source": "PDF 003, 153", "interpretation": "likely low"}
   ]
 }
 ```
+
+Relative calculations should be included whenever the records support them. Useful forms include:
+
+- `observed / reference_anchor`, expressed as a rough percentage or range when both sides have comparable units
+- `days_with_item / recorded_days`, expressed as frequency rather than a medical conclusion
+- `current_period / previous_period`, used only when the prior period has comparable data quality
+- `low_confidence_entries / relevant_entries`, used to explain uncertainty
+- `recommended_delta`, such as adding about one serving, one dish, or one more day per week relative to the current pattern
 
 ## recommendation.md
 
@@ -105,11 +123,21 @@ Use this section order for generated recommendation files:
 2. `## Profile And Context`
 3. `## Recent Record Overview`
 4. `## Main Observations`
-5. `## Guideline-Principle Comparison`
-6. `## Next 7 Days`
-7. `## Shopping And Prep`
-8. `## Uncertainty And Safety Boundaries`
-9. `## Sources`
+5. `## Relative Calculations`
+6. `## Guideline-Principle Comparison`
+7. `## Next 7 Days`
+8. `## Shopping And Prep`
+9. `## Uncertainty And Safety Boundaries`
+10. `## Sources`
+
+The `## Relative Calculations` section should show the arithmetic that shaped the recommendation, for example:
+
+```markdown
+| Topic | Recent pattern | Guideline anchor | Relative reading | Planning delta |
+|---|---|---|---|---|
+| Dairy | Logged on 2/7 days; portions partly unknown | Adult dairy 300-500 g/day | Frequency is well below a daily anchor; gram comparison is low confidence | Add unsweetened milk/yogurt on 4-5 more days next week |
+| Vegetables | Estimated about 180 g/day across recorded meals | Adult vegetables 300-500 g/day | About 60% of the lower anchor, medium confidence | Add one cooked vegetable dish at lunch or dinner most days |
+```
 
 Always distinguish:
 
