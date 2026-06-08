@@ -1,53 +1,57 @@
 ---
 name: chinese-dietary-guidelines
-description: Record daily meals, summarize recent intake, and recommend 7-day meal directions using the Chinese Dietary Guidelines for Chinese Residents 2022. Use when the user asks to log food, review diet quality, compare intake against Chinese resident dietary guidance, plan meals for the next few days or week, handle pregnancy/lactation/children/older adult/vegetarian guideline profiles, or create local JSONL diet records and guideline-based recommendations.
+description: Agent-led dietary logging, review, and meal-planning support based on the Chinese Dietary Guidelines for Chinese Residents 2022. Use when the user asks to record meals, maintain local JSONL diet logs, review recent eating patterns, compare diet habits against Chinese resident dietary principles, plan meals for the next few days or week, or adapt guidance for pregnancy, lactation, children, older adults, or vegetarian diets.
 ---
 
 # Chinese Dietary Guidelines
 
-## Core Workflow
+## Operating Model
 
-Use this skill for daily diet logging and guideline-based planning. It is not a medical nutrition therapy tool.
+Use this skill as an agent-led workflow. Keep recommendations interpretive and context-aware instead of reducing the guidelines to a mechanical scoring table. Use the references to reason from principles, user context, recent records, and uncertainty.
 
-1. Establish or load the user profile from `~/.codex/data/chinese-dietary-guidelines/profile.json`.
-2. Record meals into `diet_log.jsonl` with normalized food groups and gram estimates.
-3. Summarize recent records before recommending changes.
-4. Generate a 7-day recommendation by comparing the recent pattern against the relevant guideline profile.
-5. Mention confidence limits when foods lack grams, when records are sparse, or when the user has medical conditions.
+Store private records locally under `~/.codex/data/chinese-dietary-guidelines/`:
 
-Use `scripts/diet_log.py` for deterministic storage, validation, summaries, and recommendation files. Keep private diet records outside git.
+- `profile.json`
+- `diet_log.jsonl`
+- `recommendations/*.md`
 
-## Data Commands
+Read and write these files directly when the user asks to record, analyze, or plan. Do not commit private diet data into any repository.
 
-Run from the skill directory or pass the script path explicitly.
+## Reference Use
 
-```bash
-python3 scripts/diet_log.py init-profile --sex female --age 35 --height-cm 165 --weight-kg 58 --life-stage adult
-python3 scripts/diet_log.py add --date 2026-06-08 --meal-type lunch --food "米饭|150|g|grains" --food "菠菜|250|g|dark_vegetables" --food "鸡蛋|50|g|eggs"
-python3 scripts/diet_log.py summary --days 7
-python3 scripts/diet_log.py recommend --days 7 --print
-python3 scripts/diet_log.py validate
-```
+- Read `references/data-schemas.md` before writing or interpreting records.
+- Read `references/guideline-principles.md` before analyzing or recommending.
+- Read `references/food-taxonomy.md` when classifying foods or estimating rough portions.
+- Read `references/safety-boundaries.md` whenever the user mentions disease, pregnancy complications, child growth, frailty, dysphagia, supplements, rapid weight change, or other high-risk contexts.
 
-Use `--data-dir PATH` for tests or non-default storage. The default data directory is `~/.codex/data/chinese-dietary-guidelines/`.
+## Recording Workflow
 
-## References
+1. Identify date, meal type, foods, portion descriptions, water, alcohol, cooking oil, salt, added sugar, activity, and notes.
+2. Ask for missing high-impact facts only when they affect record quality; otherwise record with explicit uncertainty.
+3. Classify foods into schema groups using context and the taxonomy reference. Do not rely on keyword matching alone.
+4. Estimate grams only when useful and clearly mark `confidence` and `evidence_note`.
+5. Append one JSON object per line to `diet_log.jsonl`. Never overwrite historical records unless the user explicitly asks to correct an entry.
 
-- Read `references/guideline-rules.md` when choosing rules for adult, pregnant, lactating, preschool, school-age, older adult, or vegetarian users.
-- Read `references/food-taxonomy.md` when normalizing food names, units, and groups.
-- Read `references/safety-boundaries.md` when the user mentions disease, pregnancy complications, eating disorders, children, older adults, supplements, or weight-loss goals.
+## Analysis Workflow
 
-## Recording Rules
+1. Load `profile.json` if present; if missing, infer only minimal context from the request and say the analysis is provisional.
+2. Read recent records, usually 7-14 days depending on the user request.
+3. Start with data quality: recorded days, missing meals, estimated portions, low-confidence fields, and major unknowns.
+4. Analyze dynamically against the applicable principles: food variety, vegetables and fruit, dairy, whole grains and legumes, tubers, fish/poultry/eggs/lean meat, soy and nuts, oil, salt, added sugar, alcohol, water, and activity.
+5. Explain reasoning in natural language. Use numbers from records when useful, but avoid pretending rough estimates are precise.
 
-- Prefer explicit grams or milliliters. Estimate only when the user gives household units.
-- Use canonical groups from `references/food-taxonomy.md`; do not invent new group names unless recorded as `other`.
-- Mark `confidence=low` when the amount is missing or only qualitative.
-- Do not store allergy, medical, or personal data in the repository.
+## Recommendation Workflow
 
-## Recommendation Rules
+For 7-day planning, generate directionally useful guidance rather than a rigid menu unless the user asks for a menu.
 
-- Recommend food-group adjustments first: vegetables, fruits, dairy, whole grains/legumes, tubers, animal foods, fish, soy/nuts, oil, salt, sugar, water, alcohol, and activity.
-- Use the profile `life_stage` first; use vegetarian rules when `vegetarian_type` is `vegan` or `lacto_ovo` and no pregnancy/lactation/child rule overrides it.
-- Preserve guideline page citations in summaries and recommendations.
-- For sparse logs, say that the recommendation is based on incomplete records.
-- For chronic disease, pregnancy complications, child growth concerns, frailty, dysphagia, or rapid weight change, give only guideline-level advice and suggest clinician or registered dietitian review.
+Include:
+
+- profile and context summary
+- recent record overview
+- main observations and uncertainties
+- guideline-principle comparison with PDF page sources
+- next 7-day priorities
+- practical meal, shopping, and prep suggestions
+- safety boundaries and referral prompts when relevant
+
+For pregnancy, lactation, children, older adults, and vegetarian users, switch to the matching principle section and avoid adult-default assumptions. Do not recommend weight loss during pregnancy or childhood. Do not prescribe supplement dosages or disease-specific nutrition therapy.
