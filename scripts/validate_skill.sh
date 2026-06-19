@@ -33,6 +33,17 @@ for ref in "${required_refs[@]}"; do
   grep -q "$ref" "$SKILL_FILE" || fail "SKILL.md does not reference $ref"
 done
 
+GUIDELINES="$SKILL_DIR/references/guideline-principles.md"
+grep -q 'Sources: PDF' "$GUIDELINES" || fail "guideline principles missing PDF page sources"
+grep -q 'Food variety.*12 food types per day.*25 per week' "$GUIDELINES" || fail "guideline principles missing food-variety anchor"
+grep -q 'Vegetables.*300-500 g/day' "$GUIDELINES" || fail "guideline principles missing vegetable anchor"
+grep -q 'Fruit.*200-350 g/day' "$GUIDELINES" || fail "guideline principles missing fruit anchor"
+grep -q 'Dairy.*300-500 g/day' "$GUIDELINES" || fail "guideline principles missing adult dairy anchor"
+grep -q 'Pregnancy' "$GUIDELINES" || fail "guideline principles missing pregnancy section"
+grep -q 'Lactation' "$GUIDELINES" || fail "guideline principles missing lactation section"
+grep -q 'Older Adults' "$GUIDELINES" || fail "guideline principles missing older-adult section"
+grep -q 'Vegetarian Adults' "$GUIDELINES" || fail "guideline principles missing vegetarian section"
+
 if find "$SKILL_DIR" -path '*/scripts/*' -type f | grep -q .; then
   fail "skill directory must not contain rule-engine scripts"
 fi
