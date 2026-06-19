@@ -1,21 +1,12 @@
 # Dietary Guidelines for Chinese Residents Workspace
 
-本地完整仓库保存《中国居民膳食指南（2022）》扫描版 PDF 的 OCR、表格复核、正文校订、verified Markdown 产物，以及基于这些资料整理出的 Codex skill。
+本仓库保存《中国居民膳食指南（2022）》扫描版 PDF 的 OCR、表格复核、正文校订、verified Markdown 产物，以及基于这些资料整理出的 Codex skill。
 
-公开 GitHub 仓库只发布脱敏后的 skill package，不发布源 PDF、OCR 全文、verified 全书 Markdown、页图、QA 原始校订材料或任何私人饮食数据。
+公开 GitHub 仓库保留 OCR 文本、verified Markdown、QA 校订材料和 skill 必要知识包，便于追溯和复用；不发布私人饮食数据、本机安装目录副本、源 PDF、页面图片、手工裁图或缓存。
 
-## Public Skill Package
+## Codex Skill
 
-公开发布内容仅包含：
-
-- `skills/chinese-dietary-guidelines/`
-- `VERSION`
-- `CHANGELOG.md`
-- `scripts/validate_skill.sh`
-- `.github/workflows/validate.yml`
-- public README and repository metadata
-
-公开包的目标是提供一个 Codex skill，用于：
+本仓库包含 `chinese-dietary-guidelines` Codex skill，用于：
 
 - 建立饮食画像
 - 记录和纠正每日饮食
@@ -31,7 +22,7 @@
 ~/.codex/data/chinese-dietary-guidelines/
 ```
 
-公开仓库不包含、也不应提交这些文件。
+仓库不包含、也不应提交这些私人数据文件。
 
 ## Skill Installation
 
@@ -81,14 +72,12 @@ cp -R skills/chinese-dietary-guidelines ~/.codex/skills/chinese-dietary-guidelin
 - 手工裁图和其他 PNG 二进制中间产物
 - Tesseract 语言模型和 Python 缓存
 
-公开 GitHub 仓库额外不纳入：
+公开 GitHub 仓库仍不纳入：
 
-- OCR 文本目录
-- verified 全书 Markdown
-- QA 原始校订和审计材料
 - 源 PDF 或任何页面图片
 - 本机安装目录副本
 - `~/.codex/data/chinese-dietary-guidelines/` 下的私人饮食数据
+- Python 缓存、OCR runtime 缓存和临时 public-release staging 目录
 
 ## Release And Validation
 
@@ -98,13 +87,13 @@ cp -R skills/chinese-dietary-guidelines ~/.codex/skills/chinese-dietary-guidelin
 bash scripts/validate_skill.sh
 ```
 
-公开仓库 CI 使用严格模式：
+公开仓库 CI 使用默认验证模式：
 
 ```bash
-STRICT_PUBLIC=1 bash scripts/validate_skill.sh
+bash scripts/validate_skill.sh
 ```
 
-严格模式会拒绝 OCR/PDF/QA/full Markdown 抽取产物进入公开包。
+CI 验证 skill 结构、核心指南锚点、旧规则引擎残留、TODO/FIXME、私人日志和缓存文件。OCR/verified Markdown/QA 文本材料是公开语料的一部分，不在 CI 中禁止。
 
 ## 常用校验
 
