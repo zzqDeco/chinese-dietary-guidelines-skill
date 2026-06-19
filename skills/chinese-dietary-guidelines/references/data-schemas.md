@@ -125,10 +125,13 @@ Use this section order for generated recommendation files:
 4. `## Main Observations`
 5. `## Relative Calculations`
 6. `## Guideline-Principle Comparison`
-7. `## Next 7 Days`
-8. `## Shopping And Prep`
-9. `## Uncertainty And Safety Boundaries`
-10. `## Sources`
+7. `## 7-Day Meal Plan`
+8. `## Daily Ingredient Totals`
+9. `## Recipe Tutorial Links`
+10. `## Shopping List`
+11. `## Prep Schedule`
+12. `## Uncertainty And Safety Boundaries`
+13. `## Sources`
 
 The `## Relative Calculations` section should show the arithmetic that shaped the recommendation, for example:
 
@@ -139,9 +142,45 @@ The `## Relative Calculations` section should show the arithmetic that shaped th
 | Vegetables | Estimated about 180 g/day across recorded meals | Adult vegetables 300-500 g/day | About 60% of the lower anchor, medium confidence | Add one cooked vegetable dish at lunch or dinner most days |
 ```
 
+The `## 7-Day Meal Plan` section must use this table shape:
+
+```markdown
+| Day | Meal | Dish | Ingredients With Grams | Food Group Contribution | Recipe Link | Prep Notes |
+|---|---|---|---|---|---|---|
+| Day 1 | Breakfast | 燕麦牛奶粥 + 水煮蛋 + 苹果 | 燕麦40g, 牛奶250g, 鸡蛋50g, 苹果150g | whole_grains_legumes 40g; dairy 250g; eggs 50g; fruit 150g | [教程标题](https://example.com) | 少糖或不加糖 |
+```
+
+Rules:
+
+- Include at least breakfast, lunch, and dinner for each of 7 days.
+- `Dish` must name cookable dishes, not only food groups.
+- `Ingredients With Grams` must list major ingredients and rough grams.
+- `Food Group Contribution` must map ingredients back to guideline food groups.
+- `Recipe Link` should point to a verified tutorial for the core dish; use `not_verified` only when link verification was impossible.
+- `Prep Notes` should include cooking method, oil/salt control, substitutions, or appliance constraints.
+
+The `## Daily Ingredient Totals` section must use this table shape:
+
+```markdown
+| Day | vegetables_g | fruit_g | dairy_g | grains_g | whole_grains_legumes_g | tubers_g | animal_foods_g | fish_g | eggs_g | soy_nuts_g | water_ml | Notes |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Day 1 | 350 | 250 | 300 | 220 | 60 | 50 | 160 | 80 | 50 | 25 | 1500 | Close to adult anchors; fish contributes to weekly target. |
+```
+
+Use `null` or `unknown` rather than inventing precision when a quantity cannot be estimated. If the recommendation is for pregnancy, lactation, children, older adults, or vegetarian users, compare against that profile's anchors rather than adult defaults.
+
+The `## Recipe Tutorial Links` section must use this table shape:
+
+```markdown
+| Dish | Tutorial Title | Source | URL | Type | Verified Date | Verification Notes |
+|---|---|---|---|---|---|---|
+| 清蒸鲈鱼 | 清蒸鲈鱼做法示例 | source name | https://example.com | image_text | 2026-06-20 | Accessible; shows ingredients and steps. |
+```
+
 Always distinguish:
 
 - confirmed facts from records
 - estimates from household units
 - assumptions from missing data
 - guideline principles from medical advice
+- recipe links verified at recommendation time from unverified or unavailable links
