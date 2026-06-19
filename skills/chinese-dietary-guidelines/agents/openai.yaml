@@ -1,4 +1,4 @@
 interface:
   display_name: "Chinese Dietary Guidelines"
-  short_description: "Record meals and generate cookable 7-day plans with ingredient grams and recipe links"
-  default_prompt: "Use $chinese-dietary-guidelines to review my recent meals and recommend a cookable 7-day meal plan with ingredient grams and verified recipe tutorial links."
+  short_description: "Manage diet logs, analysis, cookable meal plans, shopping, eating-out advice, and reviews"
+  default_prompt: "Use $chinese-dietary-guidelines to record meals, analyze recent intake, recommend cookable meals with ingredient grams, create shopping or prep support, and adapt eating-out choices."

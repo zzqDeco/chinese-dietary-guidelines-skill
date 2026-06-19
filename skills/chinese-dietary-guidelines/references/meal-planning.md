@@ -66,8 +66,47 @@ Use these as style examples, not as a fixed menu:
 - Give ingredient grams for major ingredients; use rough grams where needed and label estimates.
 - Vary dishes enough to support food variety.
 - Track weekly fish/seafood, dairy frequency, soy/nuts frequency, and vegetable color mix.
+- Include a shopping list and prep schedule unless the user asks only for dish ideas.
 - If restaurant meals are planned, specify what to order and how it contributes to the daily totals.
 - If the plan cannot meet every anchor because of user constraints, state the tradeoff clearly.
+
+## Shopping List Rules
+
+Group planned ingredients by:
+
+- produce
+- fruit
+- dairy
+- grains and whole grains
+- tubers
+- animal foods
+- soy products and nuts
+- pantry and optional seasonings
+
+Convert planned grams into rough purchase quantities, such as `西兰花约2颗`, `牛奶2-3盒`, or `鸡蛋7枚`, when that is more useful than raw grams. Keep the rough gram basis visible when possible.
+
+## Prep Schedule Rules
+
+Offer practical prep steps:
+
+- wash and cut sturdy vegetables for 2-3 days
+- cook and portion mixed grains or legumes
+- thaw or portion fish, poultry, or lean meat
+- prepare low-salt sauces separately
+- portion nuts and fruit
+- batch-cook soups or stews when appropriate
+
+Adapt prep to the user's tools. If the profile says only `rice_cooker`, `microwave`, `air_fryer`, or `one_pot`, choose dishes and prep steps compatible with those tools.
+
+## Execution Review Rules
+
+When reviewing a prior plan:
+
+- compare planned meals with actual logs
+- identify repeated skipped dishes and likely friction
+- keep dishes the user completed or liked
+- replace dishes that require unavailable tools, too much time, disliked ingredients, or hard-to-find ingredients
+- preserve guideline priorities while lowering execution difficulty
 
 ## Profile Adaptation
 
@@ -86,3 +125,5 @@ A useful recommendation should let the user answer:
 - Which guideline gap does this dish address?
 - Where can I learn the cooking method?
 - What should I swap if I dislike or cannot eat an ingredient?
+- What can I prep ahead, and what should I buy?
+- What should change next week if I did not follow the plan?

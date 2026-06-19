@@ -1,6 +1,6 @@
 ---
 name: chinese-dietary-guidelines
-description: Agent-led dietary logging, review, and cookable 7-day meal-planning support based on the Chinese Dietary Guidelines for Chinese Residents 2022. Use when the user asks to record meals, maintain local JSONL diet logs, review recent eating patterns, compare diet habits against Chinese resident dietary principles, plan specific meals with ingredient grams and recipe tutorial links, or adapt guidance for pregnancy, lactation, children, older adults, or vegetarian diets.
+description: Agent-led daily dietary management based on the Chinese Dietary Guidelines for Chinese Residents 2022. Use when the user asks to build a diet profile, record or correct meals, analyze recent intake, compare diet habits against Chinese resident dietary principles, plan specific meals with ingredient grams and recipe tutorial links, create shopping or prep plans, handle eating-out choices, review execution, or adapt guidance for pregnancy, lactation, children, older adults, or vegetarian diets.
 ---
 
 # Chinese Dietary Guidelines
@@ -16,17 +16,37 @@ Store private records locally under `~/.codex/data/chinese-dietary-guidelines/`:
 - `profile.json`
 - `diet_log.jsonl`
 - `recommendations/*.md`
+- `analysis/*.md`
+- `reviews/*.md`
 
 Read and write these files directly when the user asks to record, analyze, or plan. Do not commit private diet data into any repository.
 
 ## Reference Use
 
 - Read `references/data-schemas.md` before writing or interpreting records.
+- Read `references/feature-workflows.md` before choosing a sub-function workflow.
 - Read `references/guideline-principles.md` before analyzing or recommending.
 - Read `references/food-taxonomy.md` when classifying foods or estimating rough portions.
 - Read `references/meal-planning.md` before generating any concrete meal plan.
+- Read `references/eating-out.md` before advising on cafeteria, delivery, convenience-store, restaurant, or travel meals.
 - Read `references/recipe-link-policy.md` before adding recipe tutorial links.
 - Read `references/safety-boundaries.md` whenever the user mentions disease, pregnancy complications, child growth, frailty, dysphagia, supplements, rapid weight change, or other high-risk contexts.
+
+## Feature Map
+
+Use the smallest sub-function that fully answers the user:
+
+- profile setup or update: collect only the missing facts that affect the current task
+- meal logging: parse one meal or day into JSONL with food groups, rough grams, confidence, and source text
+- record correction: preserve traceability when the user fixes a previous entry
+- period analysis: summarize 1, 7, 14, or 30 days with data quality, relative gaps, trends, and page sources
+- concrete meal recommendation: generate cookable meals with ingredient grams, daily totals, recipe links, shopping, and prep
+- shopping and prep: turn an existing plan into a categorized shopping list and time-saving prep schedule
+- eating-out advice: provide immediate cafeteria, delivery, restaurant, or convenience-store choices without pretending oil/salt are known
+- execution review: compare a prior plan with actual logs and adapt the next plan to the user's real behavior
+- special population adaptation: switch anchors and safety language for pregnancy, lactation, children, older adults, and vegetarian users
+
+When multiple sub-functions are requested, run them in this order: profile context, record or correction, analysis, recommendation, shopping/prep, review.
 
 ## Relative Calculation Policy
 
@@ -51,7 +71,17 @@ Do not turn these calculations into a rigid health grade, diagnosis, disease tre
 2. Ask for missing high-impact facts only when they affect record quality; otherwise record with explicit uncertainty.
 3. Classify foods into schema groups using context and the taxonomy reference. Do not rely on keyword matching alone.
 4. Estimate grams only when useful and clearly mark `confidence` and `evidence_note`.
-5. Append one JSON object per line to `diet_log.jsonl`. Never overwrite historical records unless the user explicitly asks to correct an entry.
+5. Preserve the user's original wording in `source_text` when possible.
+6. Append one JSON object per line to `diet_log.jsonl`. Never overwrite historical records unless the user explicitly asks to correct an entry.
+
+## Correction Workflow
+
+When the user corrects a prior meal or portion:
+
+1. Identify the likely original record by date, meal, dish, and user wording.
+2. If there is ambiguity, ask one short clarification instead of editing the wrong record.
+3. Add traceability using `correction_of` and `updated_reason`, or write a clearly marked corrected entry if direct in-place editing is inappropriate.
+4. Recalculate affected analysis or plan deltas only after the correction is recorded.
 
 ## Analysis Workflow
 
@@ -85,3 +115,30 @@ Each core meal should be specific enough for the user to cook, such as `番茄�
 When internet access is available, search for and verify current recipe tutorial links during recommendation generation. If links cannot be verified, still provide the meal plan and ingredient quantities, but clearly mark the tutorial-link section as not verified.
 
 For pregnancy, lactation, children, older adults, and vegetarian users, switch to the matching principle section and avoid adult-default assumptions. Do not recommend weight loss during pregnancy or childhood. Do not prescribe supplement dosages or disease-specific nutrition therapy.
+
+## Shopping And Prep Workflow
+
+When the user asks for a shopping list or prep plan:
+
+1. Start from an existing meal plan if available; otherwise ask whether to generate one first.
+2. Group items by produce, fruit, dairy, grains, tubers, animal foods, soy/nuts, pantry, and optional seasonings.
+3. Include estimated purchase quantities, storage notes, and prep timing.
+4. Respect budget, cooking time, kitchen tools, allergies, disliked foods, and household size.
+
+## Eating-Out Workflow
+
+When the user asks what to eat outside:
+
+1. Identify the setting: cafeteria, delivery, convenience store, restaurant, travel, or social meal.
+2. Recommend concrete order combinations, not generic principles.
+3. Explain the likely guideline contribution and the main uncertainty, especially oil, salt, sauces, and portion size.
+4. Offer one or two substitutions if the first option is unavailable.
+
+## Review Workflow
+
+When the user asks to review execution:
+
+1. Compare the recommended plan with actual logged meals.
+2. Identify dishes or habits that were easy, skipped, disliked, or impractical.
+3. Keep successful dishes as reusable defaults and reduce repeated failed suggestions.
+4. Adjust the next recommendation using the user's real constraints, not only the guideline gaps.

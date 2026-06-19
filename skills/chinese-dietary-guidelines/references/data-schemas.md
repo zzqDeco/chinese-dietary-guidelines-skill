@@ -22,6 +22,12 @@ Default local data directory:
   "avoid_foods": [],
   "chronic_condition_notes": "",
   "goals": ["improve dietary balance"],
+  "budget_level": "medium",
+  "cooking_time": "30-45 min",
+  "kitchen_tools": ["stove", "rice_cooker"],
+  "cuisine_preferences": ["家常中餐"],
+  "disliked_foods": [],
+  "preferred_meal_count": 3,
   "updated_at": "2026-06-08T10:00:00"
 }
 ```
@@ -32,6 +38,10 @@ Allowed values:
 - `activity_level`: `low`, `medium`, `high`, or unknown.
 - `life_stage`: `adult`, `pregnant_early`, `pregnant_mid`, `pregnant_late`, `lactating`, `preschool_2_3`, `preschool_4_5`, `school_age`, `older_adult`, `very_old`.
 - `vegetarian_type`: `none`, `vegan`, `lacto_ovo`, or unknown.
+- `budget_level`: `low`, `medium`, `high`, or unknown.
+- `cooking_time`: free text such as `15 min`, `30-45 min`, `weekend meal prep`, or unknown.
+- `kitchen_tools`: common tools available to the user, such as `stove`, `rice_cooker`, `air_fryer`, `microwave`, `oven`, `one_pot`.
+- `preferred_meal_count`: usually 2, 3, or 4 depending on schedule and snack preference.
 
 If a profile is missing, ask only for details needed for the current task and label analysis provisional.
 
@@ -63,6 +73,9 @@ Append one JSON object per line.
   "salt_g": null,
   "added_sugar_g": null,
   "activity_steps": null,
+  "source_text": "早餐喝了一杯牛奶",
+  "correction_of": null,
+  "updated_reason": null,
   "notes": "",
   "created_at": "2026-06-08T10:00:00"
 }
@@ -74,6 +87,9 @@ Guidance:
 - `confidence`: `high` for explicit weighed/package values, `medium` for common household estimates, `low` for vague quantities.
 - Use `null` instead of inventing values when a field is unknown.
 - Keep `evidence_note` short and factual.
+- Preserve the original user wording in `source_text` where possible.
+- Use `correction_of` to reference the corrected record id when the user fixes a previous entry.
+- Use `updated_reason` for brief correction notes, such as `user corrected chicken from 100g to 150g`.
 
 ## analysis_summary
 
@@ -184,3 +200,62 @@ Always distinguish:
 - assumptions from missing data
 - guideline principles from medical advice
 - recipe links verified at recommendation time from unverified or unavailable links
+
+## analysis_report.md
+
+Use this section order for saved period analyses:
+
+1. `# Dietary Analysis Report`
+2. `## Profile And Scope`
+3. `## Data Quality`
+4. `## Relative Calculations`
+5. `## Main Gaps And Excesses`
+6. `## Trends Versus Previous Period`
+7. `## Priority Actions`
+8. `## Uncertainty And Safety Boundaries`
+9. `## Sources`
+
+The report should support 1-day, 7-day, 14-day, and 30-day windows. If a previous comparable period is unavailable, write `no comparable prior period`.
+
+## shopping_list.md
+
+Use this section order when turning a plan into shopping and prep support:
+
+1. `# Shopping List`
+2. `## Plan Scope`
+3. `## Items By Category`
+4. `## Estimated Quantities`
+5. `## Prep-Ahead Items`
+6. `## Storage Notes`
+7. `## Budget Or Tool Constraints`
+
+Group categories as produce, fruit, dairy, grains, tubers, animal foods, soy and nuts, pantry, and optional seasonings. Use rough purchase quantities and explain uncertainty when planned grams do not map cleanly to package sizes.
+
+## meal_plan_review.md
+
+Use this section order when reviewing plan execution:
+
+1. `# Meal Plan Review`
+2. `## Planned Versus Logged`
+3. `## Completed Meals`
+4. `## Skipped Or Replaced Meals`
+5. `## Easy Defaults To Reuse`
+6. `## Friction Points`
+7. `## Next Plan Adjustments`
+8. `## Data Gaps`
+
+Keep successful dishes and user-approved substitutions as future defaults. Remove or reduce dishes the user rejected, could not cook, or repeatedly skipped.
+
+## eating_out_advice.md
+
+Use this section order for cafeteria, delivery, restaurant, travel, or convenience-store guidance:
+
+1. `# Eating-Out Advice`
+2. `## Setting And Constraints`
+3. `## Recommended Order Combinations`
+4. `## Guideline Contribution`
+5. `## Oil Salt Sugar Uncertainty`
+6. `## Substitutions`
+7. `## What To Log Afterwards`
+
+Do not estimate precise oil or salt for restaurant foods unless the user provides reliable data. Use practical language such as `choose steamed or braised dishes, ask for sauce separately, add a vegetable dish, choose plain milk or unsweetened yogurt`.
