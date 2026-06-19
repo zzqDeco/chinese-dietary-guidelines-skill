@@ -5,7 +5,7 @@
 - 输入 PDF：`1711104221187059.pdf`
 - PDF 页数：374
 - PDF 文本层：无，按扫描图片处理
-- OCR 输出目录：`ocr_text_v2/`
+- OCR 输出目录：`corpus/ocr/v2/`
 - 渲染工具：Poppler `pdftoppm`
 - 渲染分辨率：220 DPI
 - OCR 工具：Tesseract
@@ -13,7 +13,7 @@
 
 ## 覆盖率
 
-- `dietary_guidelines_china_2022_full.md` 页标数量：374/374
+- `corpus/extracted/full.md` 页标数量：374/374
 - OCR 分页文件数量：374/374
 - 空白或纯图片页：无
 
@@ -21,7 +21,7 @@
 
 - 表格候选总数：99
 - 已完成列结构复核的候选：99；其中高置信手工整理表：31
-- 其余真实表格已从 OCR 行级展示改为多列 Markdown 表格；逐项置信度见 `qa/table_review.csv`。
+- 其余真实表格已从 OCR 行级展示改为多列 Markdown 表格；逐项置信度见 `qa/indexes/table_review.csv`。
 
 ## 置信度与噪声
 
@@ -57,8 +57,8 @@
 - OCR 误抓正文引用：13
 - 列结构置信度：{'high': 44, 'medium': 55}
 - 内容置信度：{'high': 31, 'n/a': 13, 'medium': 55}
-- 所有候选均已登记到 `qa/table_review.csv`，并提供对应页图 `qa/table_page_images/page_NNN.png`。
-- `dietary_guidelines_china_2022_tables.md` 已由旧的 OCR 行级展示改为列结构展示；关键推荐量表和部分数值表采用人工整理后的高置信表格。
+- 所有候选均已登记到 `qa/indexes/table_review.csv`，并提供对应页图 `qa/table_page_images/page_NNN.png`。
+- `corpus/extracted/tables.md` 已由旧的 OCR 行级展示改为列结构展示；关键推荐量表和部分数值表采用人工整理后的高置信表格。
 - 本轮复核目标是列结构和候选归类；非关键长表仍可能存在 OCR 字符级误识别，需要出版级使用前逐字校样。
 
 ## Verified 数字与术语校订
@@ -76,6 +76,6 @@
 - 中置信表格已登记为仍需逐单元校样：0 张
 - 仍需人工逐单元复核的页码/表号：无
 - verified 文件中目标噪声剩余命中：无
-- 额外转换事项：第 365 页为密集 BMI 对照图表，已作为非 99 候选图表写入 verified 正文和表格汇总，并列入 `qa/low_confidence_page_review.csv`。
+- 额外转换事项：第 365 页为密集 BMI 对照图表，已作为非 99 候选图表写入 verified 正文和表格汇总，并列入 `qa/indexes/low_confidence_page_review.csv`。
 
 说明：本阶段生成的 verified 版是“表格数字、高频 OCR 术语和低置信页目标噪声校订版”。55 张原中置信表已按页图和 Vision OCR 工作包写入 verified override，并逐单元登记为 confirmed；74 个低置信页已建立页图/Vision OCR 复核台账，其中第 365 页密集 BMI 对照图表已额外转换。该版本不等同于整本正文出版级逐字校样。原始 OCR 底稿和上一轮完整 Markdown 未覆盖，仍作为追溯证据保留。

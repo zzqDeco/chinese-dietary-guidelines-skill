@@ -1,6 +1,6 @@
 # 中国居民膳食指南（2022）表格汇总
 
-> 本版为 99 个 OCR 表格候选的逐项列结构复核版。真实表格已按列输出；误抓的正文引用标为 `not_a_table_after_review`；跨页或续表标为 `merged_continuation`。扫描件 OCR 仍可能存在个别文字误识别，详见 `qa/extraction_audit.md`。
+> 本版为 99 个 OCR 表格候选的逐项列结构复核版。真实表格已按列输出；误抓的正文引用标为 `not_a_table_after_review`；跨页或续表标为 `merged_continuation`。扫描件 OCR 仍可能存在个别文字误识别，详见 `qa/audit/extraction_audit.md`。
 
 ## 001. 表 1-1：表 1-1 不同人群谷薯类食物建议摄入量
 

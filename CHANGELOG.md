@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.1 - 2026-06-20
+
+Repository organization and documentation refresh.
+
+- Reorganized the repository into `skills/`, `corpus/`, `qa/`, `scripts/`, and `docs/` sections.
+- Moved verified, extracted, and OCR corpus files under `corpus/`.
+- Split QA artifacts into `qa/audit/`, `qa/corrections/`, and `qa/indexes/`.
+- Moved extraction tooling under `scripts/extraction/` while keeping `scripts/validate_skill.sh` as the CI entrypoint.
+- Rewrote `README.md` as a public project introduction with install, corpus, validation, privacy, safety, and versioning notes.
+- Added docs for extraction methodology, public data policy, and skill usage.
+- Updated validation to check the new corpus paths, 374 full-text page markers, and 99 verified table candidate sections.
+- No skill behavior change.
+
 ## 0.1.0 - 2026-06-20
 
 Initial usable public skill release.

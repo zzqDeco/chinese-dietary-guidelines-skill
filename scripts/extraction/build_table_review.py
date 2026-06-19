@@ -4,12 +4,14 @@ import importlib.util
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[1]
-BUILD_SCRIPT = ROOT / "scripts" / "build_guidelines_deliverables.py"
+ROOT = Path(__file__).resolve().parents[2]
+BUILD_SCRIPT = ROOT / "scripts" / "extraction" / "build_guidelines_deliverables.py"
 QA_DIR = ROOT / "qa"
 IMAGE_DIR = QA_DIR / "table_page_images"
-OUT_CSV = QA_DIR / "table_review.csv"
-OUT_MD = QA_DIR / "table_review_work.md"
+QA_AUDIT_DIR = QA_DIR / "audit"
+QA_INDEX_DIR = QA_DIR / "indexes"
+OUT_CSV = QA_INDEX_DIR / "table_review.csv"
+OUT_MD = QA_AUDIT_DIR / "table_review_work.md"
 
 
 def load_build_module():
@@ -24,7 +26,8 @@ def main():
     module = load_build_module()
     pages = module.read_pages()
     tables = module.extract_tables(pages)
-    QA_DIR.mkdir(exist_ok=True)
+    QA_AUDIT_DIR.mkdir(parents=True, exist_ok=True)
+    QA_INDEX_DIR.mkdir(parents=True, exist_ok=True)
 
     with OUT_CSV.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
@@ -61,7 +64,7 @@ def main():
     parts = [
         "# 表格逐张复核工作清单",
         "",
-        "本文件把 `qa/table_index.csv` 的候选表格、原 OCR 行块和渲染页图路径放在一起，用于逐表列结构复核。",
+        "本文件把 `qa/indexes/table_index.csv` 的候选表格、原 OCR 行块和渲染页图路径放在一起，用于逐表列结构复核。",
         "",
     ]
     for idx, table in enumerate(tables, 1):

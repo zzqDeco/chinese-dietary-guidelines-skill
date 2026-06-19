@@ -4,14 +4,17 @@ import re
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 QA = ROOT / "qa"
-PAGE_STATUS = QA / "page_status.csv"
+QA_AUDIT = QA / "audit"
+QA_CORRECTIONS = QA / "corrections"
+QA_INDEXES = QA / "indexes"
+PAGE_STATUS = QA_INDEXES / "page_status.csv"
 BODY_IMAGES = QA / "body_page_images"
-VISION = QA / "vision_ocr_body"
-BODY_CORRECTIONS = QA / "body_text_corrections.csv"
-LOW_REVIEW = QA / "low_confidence_page_review.csv"
-LOW_VISION_MD = QA / "low_confidence_page_vision.md"
+VISION = QA_AUDIT / "vision_ocr_body"
+BODY_CORRECTIONS = QA_CORRECTIONS / "body_text_corrections.csv"
+LOW_REVIEW = QA_INDEXES / "low_confidence_page_review.csv"
+LOW_VISION_MD = QA_AUDIT / "low_confidence_page_vision.md"
 
 
 def read_vision(page: str) -> list[str]:
@@ -32,6 +35,8 @@ def low_pages() -> list[dict[str, str]]:
 
 
 def write_low_review() -> list[dict[str, str]]:
+    QA_AUDIT.mkdir(parents=True, exist_ok=True)
+    QA_INDEXES.mkdir(parents=True, exist_ok=True)
     rows = []
     md = ["# Low-confidence page Vision OCR review", ""]
     for row in low_pages():
@@ -169,6 +174,7 @@ def row(page: str, original: str, corrected: str, term: str, mode: str) -> dict[
 
 def write_body_corrections() -> list[dict[str, str]]:
     rows = body_correction_rows()
+    QA_CORRECTIONS.mkdir(parents=True, exist_ok=True)
     with BODY_CORRECTIONS.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         writer.writeheader()

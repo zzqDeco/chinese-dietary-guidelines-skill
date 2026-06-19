@@ -1,8 +1,8 @@
 # 中国居民膳食指南（2022）关键内容整理（带页码核验版）
 
-> 状态：旧版关键内容草稿。请优先使用带页码来源的 `dietary_guidelines_china_2022_key_content_verified.md`；完整页序 OCR 正文见 `dietary_guidelines_china_2022_full.md`。
+> 状态：旧版关键内容草稿。请优先使用带页码来源的 `corpus/verified/key-content.md`；完整页序 OCR 正文见 `corpus/extracted/full.md`。
 
-> 来源：本目录 PDF `1711104221187059.pdf`。原 PDF 无文本层，本文件由 OCR v2 底稿和关键页复核整理而成；本文件仍是关键内容提取版，完整页序正文见 `dietary_guidelines_china_2022_full.md`。
+> 来源：本目录 PDF `1711104221187059.pdf`。原 PDF 无文本层，本文件由 OCR v2 底稿和关键页复核整理而成；本文件仍是关键内容提取版，完整页序正文见 `corpus/extracted/full.md`。
 
 ## 1. 文件概况
 

@@ -1,110 +1,133 @@
-# Dietary Guidelines for Chinese Residents Workspace
+# Chinese Dietary Guidelines Skill and Corpus
 
-本仓库保存《中国居民膳食指南（2022）》扫描版 PDF 的 OCR、表格复核、正文校订、verified Markdown 产物，以及基于这些资料整理出的 Codex skill。
+Public Markdown corpus and Codex skill for working with the Chinese Dietary Guidelines for Chinese Residents (2022).
 
-公开 GitHub 仓库保留 OCR 文本、verified Markdown、QA 校订材料和 skill 必要知识包，便于追溯和复用；不发布私人饮食数据、本机安装目录副本、源 PDF、页面图片、手工裁图或缓存。
+This repository provides two things together:
 
-## Codex Skill
+- A verified Markdown corpus extracted from a 374-page scanned PDF.
+- A Codex skill that helps an agent record meals, analyze recent diet patterns, and produce concrete meal plans grounded in the guideline principles.
 
-本仓库包含 `chinese-dietary-guidelines` Codex skill，用于：
+The layout follows the common open skill repository pattern used by projects such as [openai/skills](https://github.com/openai/skills), [anthropics/skills](https://github.com/anthropics/skills), [awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills), and [troykelly/codex-skills](https://github.com/troykelly/codex-skills): project-level documentation at the root, self-contained skill packages under `skills/`, and supporting corpus or tooling in separate top-level directories.
 
-- 建立饮食画像
-- 记录和纠正每日饮食
-- 分析最近 1/7/14/30 天饮食结构
-- 按《中国居民膳食指南（2022）》原则生成相对计算和行动优先级
-- 生成具体可做的 7 天餐食计划、购物清单和备餐计划
-- 给出食堂、外卖、便利店、聚餐等外食建议
-- 复盘执行情况并调整下一轮计划
+## What This Project Provides
 
-私人饮食数据只保存在本机：
+- `skills/chinese-dietary-guidelines/`: a self-contained Codex skill for daily dietary management.
+- `corpus/verified/`: reviewed Markdown outputs, including full text, tables, and key content.
+- `corpus/extracted/`: earlier extracted Markdown outputs before the verified pass.
+- `corpus/ocr/`: OCR text by page, including the v2 220 DPI Tesseract extraction.
+- `qa/`: audit reports, correction logs, page status indexes, and table review indexes.
+- `scripts/`: validation entrypoint plus extraction and rebuilding tools.
+- `docs/`: methodology, public data policy, and skill usage notes.
+
+## Repository Layout
+
+```text
+.
+├── README.md
+├── CHANGELOG.md
+├── VERSION
+├── .github/workflows/validate.yml
+├── scripts/
+│   ├── validate_skill.sh
+│   └── extraction/
+├── skills/
+│   └── chinese-dietary-guidelines/
+│       ├── SKILL.md
+│       ├── agents/openai.yaml
+│       └── references/
+├── corpus/
+│   ├── verified/
+│   ├── extracted/
+│   └── ocr/
+├── qa/
+│   ├── audit/
+│   ├── corrections/
+│   └── indexes/
+└── docs/
+```
+
+## Use The Skill
+
+Install the skill into your local Codex skills directory:
+
+```bash
+mkdir -p ~/.codex/skills
+cp -R skills/chinese-dietary-guidelines ~/.codex/skills/chinese-dietary-guidelines
+```
+
+Private user data is stored outside this repository:
 
 ```text
 ~/.codex/data/chinese-dietary-guidelines/
 ```
 
-仓库不包含、也不应提交这些私人数据文件。
+Example prompts:
 
-## Skill Installation
+- "记录今天早餐：牛奶、鸡蛋、全麦面包。"
+- "分析我最近 7 天的饮食结构。"
+- "按中国居民膳食指南推荐下周 7 天具体餐食。"
+- "今天只能吃食堂，怎么选更接近指南？"
+- "根据下周菜单生成购物清单和备餐计划。"
 
-开发完成后，将 skill 源码复制到本机 Codex skill 目录：
+The skill is agent-led. It does transparent relative calculations when analyzing or recommending, but it does not include a hidden deterministic diet rule engine or clinical nutrition calculator.
 
-```bash
-cp -R skills/chinese-dietary-guidelines ~/.codex/skills/chinese-dietary-guidelines
-```
+See [docs/skill-usage.md](docs/skill-usage.md) for details.
 
-## Safety Boundary
+## Use The Corpus
 
-该 skill 面向日常膳食记录、结构分析和指南级饮食建议，不提供医疗诊断、疾病治疗、临床营养处方、孕期/儿童减重建议或补剂剂量处方。慢病、孕产风险、儿童生长异常、吞咽困难、快速体重变化等场景应提示医生或注册营养师评估。
+- [corpus/verified/full.md](corpus/verified/full.md): full verified Markdown with 374 `pdf-page` markers.
+- [corpus/verified/tables.md](corpus/verified/tables.md): verified table summary for 99 OCR table candidates, plus the dense BMI chart from page 365.
+- [corpus/verified/key-content.md](corpus/verified/key-content.md): key guideline content with page references.
+- [corpus/extracted/](corpus/extracted/): extracted Markdown before the verified correction pass.
+- [corpus/ocr/v1](corpus/ocr/v1) and [corpus/ocr/v2](corpus/ocr/v2): page-level OCR text.
 
-## 主要产物
+The corpus is intended for traceable reference and agent grounding. It is not a publisher-grade reproduction of the book layout. Tables and common OCR terminology were reviewed, but scanned-document OCR can still contain residual errors.
 
-- `dietary_guidelines_china_2022_full_verified.md`：完整 verified 正文，保留 374 个 `pdf-page` 标记。
-- `dietary_guidelines_china_2022_tables_verified.md`：99 个 OCR 表格候选的 verified 汇总，并额外纳入第 365 页 BMI 密集图表。
-- `dietary_guidelines_china_2022_key_content_verified.md`：关键内容 verified 摘要。
-- `qa/extraction_audit.md`：OCR、表格、正文低置信页和噪声校订审计报告。
-- `qa/table_cell_corrections.csv`：表格单元格校订日志。
-- `qa/body_text_corrections.csv`：正文页图校订日志。
-- `qa/low_confidence_page_review.csv`：低置信页复核台账。
+See [docs/extraction-methodology.md](docs/extraction-methodology.md) for the extraction and QA process.
 
-## 源 PDF
+## Validation
 
-源文件保留在工作目录中，但不进入普通 git 历史，避免超过常见远端仓库的单文件限制。
-
-- 文件名：`1711104221187059.pdf`
-- SHA-256：`59a1437cc8986eb07cfbd174bc2e9aebd4b282740cc545f1957cfea500789de9`
-
-如果以后需要推送到 GitHub/GitLab 并同时版本化源 PDF，应先启用 Git LFS，再把 PDF 加入 LFS 跟踪。
-
-## 版本管理策略
-
-纳入 git：
-
-- Markdown 交付物
-- OCR 文本底稿
-- QA CSV/MD 审计与校订日志
-- 构建和复核脚本
-- Vision OCR TSV 文本结果
-
-不纳入 git：
-
-- 源 PDF
-- Poppler 渲染的页图
-- 手工裁图和其他 PNG 二进制中间产物
-- Tesseract 语言模型和 Python 缓存
-
-公开 GitHub 仓库仍不纳入：
-
-- 源 PDF 或任何页面图片
-- 本机安装目录副本
-- `~/.codex/data/chinese-dietary-guidelines/` 下的私人饮食数据
-- Python 缓存、OCR runtime 缓存和临时 public-release staging 目录
-
-## Release And Validation
-
-当前版本见 `VERSION`。发布前运行：
+Run the local validation script:
 
 ```bash
 bash scripts/validate_skill.sh
 ```
 
-公开仓库 CI 使用默认验证模式：
+The check validates:
 
-```bash
-bash scripts/validate_skill.sh
-```
+- skill frontmatter and required references
+- core guideline anchors in the skill reference material
+- absence of old rule-engine scripts or wording
+- absence of TODO/FIXME in the skill package
+- verified full-text page marker count
+- verified table candidate count
+- OCR v2 presence
+- absence of tracked PDF, PNG, private diet logs, profiles, `.codex/`, and Python cache files
 
-CI 验证 skill 结构、核心指南锚点、旧规则引擎残留、TODO/FIXME、私人日志和缓存文件。OCR/verified Markdown/QA 文本材料是公开语料的一部分，不在 CI 中禁止。
+GitHub Actions runs the same validation on push and pull request.
 
-## 常用校验
+## Privacy And Safety
 
-```bash
-python3 scripts/build_body_review_assets.py
-python3 scripts/build_verified_outputs.py
-```
+This repository does not track private diet logs, local profile files, or the Codex installation directory. Keep files such as `diet_log.jsonl`, `profile.json`, and anything under `~/.codex/data/chinese-dietary-guidelines/` out of git.
 
-重建后重点检查：
+The skill supports daily diet logging, food-group analysis, concrete meal planning, shopping/prep planning, eating-out advice, and execution review. It does not provide medical diagnosis, disease treatment, clinical nutrition prescriptions, pregnancy or child weight-loss plans, or supplement dosage prescriptions.
 
-- `dietary_guidelines_china_2022_full_verified.md` 中 `<!-- pdf-page:` 数量应为 374。
-- `dietary_guidelines_china_2022_tables_verified.md` 中原候选表章节应为 99。
-- `qa/table_cell_corrections.csv` 中不应有 `uncertain_registered` 表格单元格。
-- `qa/extraction_audit.md` 应显示 verified 文件中目标噪声剩余命中为“无”。
+See [docs/public-data-policy.md](docs/public-data-policy.md).
+
+## Versioning
+
+Current version: see [VERSION](VERSION).
+
+Release history is recorded in [CHANGELOG.md](CHANGELOG.md).
+
+Version policy:
+
+- `0.1.x`: documentation, repository organization, validation, schema clarifications, and small workflow fixes.
+- `0.2.0`: new skill sub-functions or output schemas.
+- `1.0.0`: stable real-world usage with mature installation and validation workflows.
+
+## License / Source Notice
+
+No general open-source license is declared yet. The repository includes corpus text extracted from the Chinese Dietary Guidelines for Chinese Residents (2022), so the code/skill instructions and the guideline-derived corpus may need separate licensing decisions before adding a broad LICENSE file.
+
+Source PDF and page images are intentionally not tracked in normal git history.

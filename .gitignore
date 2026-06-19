@@ -12,7 +12,7 @@ __pycache__/
 .ocr_tessdata/
 
 # Large binary source/evidence files kept outside normal git history.
-# If this repository is later pushed to a remote, add these through Git LFS first.
+# If these are ever versioned, add them through Git LFS first.
 1711104221187059.pdf
 *.pdf
 
@@ -20,9 +20,13 @@ __pycache__/
 qa/body_page_images/
 qa/table_page_images/
 qa/manual_table_crops/
+qa/**/body_page_images/
+qa/**/table_page_images/
+qa/**/manual_table_crops/
 *.png
 
 # Private local skill data must never be committed.
 .codex/
+**/.codex/
 diet_log.jsonl
 profile.json

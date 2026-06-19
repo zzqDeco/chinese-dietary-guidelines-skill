@@ -82,10 +82,10 @@ def ocr_page(args):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("pdf", type=Path)
-    parser.add_argument("--out-dir", type=Path, default=Path("ocr_text"))
+    parser.add_argument("--out-dir", type=Path, default=Path("corpus/ocr/v2"))
     parser.add_argument("--pdftoppm", required=True)
     parser.add_argument("--tessdata", type=Path, required=True)
-    parser.add_argument("--dpi", type=int, default=170)
+    parser.add_argument("--dpi", type=int, default=220)
     parser.add_argument("--lang", default="chi_sim+eng")
     parser.add_argument("--psm", type=int, default=6)
     parser.add_argument("--workers", type=int, default=4)

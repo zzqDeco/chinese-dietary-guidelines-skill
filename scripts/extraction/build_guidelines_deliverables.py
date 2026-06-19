@@ -7,8 +7,13 @@ from pathlib import Path
 
 
 PAGE_COUNT = 374
-OCR_DIR = Path("ocr_text_v2")
-QA_DIR = Path("qa")
+ROOT = Path(__file__).resolve().parents[2]
+OCR_DIR = ROOT / "corpus" / "ocr" / "v2"
+EXTRACTED_DIR = ROOT / "corpus" / "extracted"
+VERIFIED_DIR = ROOT / "corpus" / "verified"
+QA_DIR = ROOT / "qa"
+QA_AUDIT_DIR = QA_DIR / "audit"
+QA_INDEX_DIR = QA_DIR / "indexes"
 
 NOISE_TERMS = [
     "腾食",
@@ -265,10 +270,11 @@ NORMALIZED_TABLES = {
 
 
 def write_full_markdown(pages, sections, by_page):
-    out = Path("dietary_guidelines_china_2022_full.md")
+    EXTRACTED_DIR.mkdir(parents=True, exist_ok=True)
+    out = EXTRACTED_DIR / "full.md"
     parts = [
         "# 中国居民膳食指南（2022）完整 OCR Markdown\n",
-        "> 来源：`1711104221187059.pdf`。原 PDF 为 374 页扫描版，无可抽取文本层。本文件按 PDF 页序保留 OCR 文字，并用 `pdf-page` 标记提供追溯。表格的规范化汇总见 `dietary_guidelines_china_2022_tables.md`。\n",
+        "> 来源：`1711104221187059.pdf`。原 PDF 为 374 页扫描版，无可抽取文本层。本文件按 PDF 页序保留 OCR 文字，并用 `pdf-page` 标记提供追溯。表格的规范化汇总见 `corpus/extracted/tables.md`。\n",
     ]
     last_section = None
     for page in range(1, PAGE_COUNT + 1):
@@ -291,10 +297,11 @@ def write_full_markdown(pages, sections, by_page):
 
 
 def write_tables_markdown(tables):
-    out = Path("dietary_guidelines_china_2022_tables.md")
+    EXTRACTED_DIR.mkdir(parents=True, exist_ok=True)
+    out = EXTRACTED_DIR / "tables.md"
     parts = [
         "# 中国居民膳食指南（2022）表格汇总\n",
-        "> 表格来自 `ocr_text_v2`。`verified=true` 的表格为关键推荐量表，已按渲染页图/既有核对结果规范化；其他表格为 OCR 行级 Markdown 转写，保留原识别行以便继续人工校对。\n",
+        "> 表格来自 `corpus/ocr/v2`。`verified=true` 的表格为关键推荐量表，已按渲染页图/既有核对结果规范化；其他表格为 OCR 行级 Markdown 转写，保留原识别行以便继续人工校对。\n",
     ]
     for idx, table in enumerate(tables, 1):
         parts.append(f"\n## {table.table_id}：{table.title}\n")
@@ -318,8 +325,8 @@ def write_tables_markdown(tables):
 
 
 def write_csvs(pages, sections, tables, by_page):
-    QA_DIR.mkdir(exist_ok=True)
-    with (QA_DIR / "page_status.csv").open("w", encoding="utf-8", newline="") as f:
+    QA_INDEX_DIR.mkdir(parents=True, exist_ok=True)
+    with (QA_INDEX_DIR / "page_status.csv").open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
             fieldnames=["pdf_page", "section", "has_text", "has_table", "table_ids", "confidence", "notes"],
@@ -347,7 +354,7 @@ def write_csvs(pages, sections, tables, by_page):
                     "notes": ";".join(notes),
                 }
             )
-    with (QA_DIR / "table_index.csv").open("w", encoding="utf-8", newline="") as f:
+    with (QA_INDEX_DIR / "table_index.csv").open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
             fieldnames=["table_id", "title", "pdf_page_start", "pdf_page_end", "status", "verified"],
@@ -367,7 +374,8 @@ def write_csvs(pages, sections, tables, by_page):
 
 
 def write_verified_key():
-    src = Path("dietary_guidelines_china_2022_key_content.md")
+    VERIFIED_DIR.mkdir(parents=True, exist_ok=True)
+    src = EXTRACTED_DIR / "key-content.md"
     text = src.read_text(encoding="utf-8") if src.exists() else ""
     replacements = {
         "# 中国居民膳食指南（2022）关键内容整理": "# 中国居民膳食指南（2022）关键内容整理（带页码核验版）",
@@ -389,13 +397,14 @@ def write_verified_key():
         text = text.replace(old, new)
     text = text.replace(
         "> 来源：本目录 PDF `1711104221187059.pdf`。原 PDF 无文本层，本文件由中文 OCR 底稿整理而成；关键数值表已结合渲染页图复核。本文是关键内容提取版，不是 374 页全量逐字转写。",
-        "> 来源：本目录 PDF `1711104221187059.pdf`。原 PDF 无文本层，本文件由 OCR v2 底稿和关键页复核整理而成；本文件仍是关键内容提取版，完整页序正文见 `dietary_guidelines_china_2022_full.md`。",
+        "> 来源：本目录 PDF `1711104221187059.pdf`。原 PDF 无文本层，本文件由 OCR v2 底稿和关键页复核整理而成；本文件仍是关键内容提取版，完整页序正文见 `corpus/extracted/full.md`。",
     )
-    Path("dietary_guidelines_china_2022_key_content_verified.md").write_text(text, encoding="utf-8")
+    (VERIFIED_DIR / "key-content.md").write_text(text, encoding="utf-8")
 
 
 def write_audit(pages, tables, by_page):
-    marker_count = Path("dietary_guidelines_china_2022_full.md").read_text(encoding="utf-8").count("<!-- pdf-page:")
+    QA_AUDIT_DIR.mkdir(parents=True, exist_ok=True)
+    marker_count = (EXTRACTED_DIR / "full.md").read_text(encoding="utf-8").count("<!-- pdf-page:")
     confidence_counts = Counter(confidence_for(text) for text in pages.values())
     noise_counts = Counter()
     for text in pages.values():
@@ -414,7 +423,7 @@ def write_audit(pages, tables, by_page):
         "- 输入 PDF：`1711104221187059.pdf`",
         "- PDF 页数：374",
         "- PDF 文本层：无，按扫描图片处理",
-        "- OCR 输出目录：`ocr_text_v2/`",
+        "- OCR 输出目录：`corpus/ocr/v2/`",
         "- 渲染工具：Poppler `pdftoppm`",
         "- 渲染分辨率：220 DPI",
         "- OCR 工具：Tesseract",
@@ -422,7 +431,7 @@ def write_audit(pages, tables, by_page):
         "",
         "## 覆盖率",
         "",
-        f"- `dietary_guidelines_china_2022_full.md` 页标数量：{marker_count}/374",
+        f"- `corpus/extracted/full.md` 页标数量：{marker_count}/374",
         f"- OCR 分页文件数量：{len(list(OCR_DIR.glob('page_*.txt')))}/374",
         f"- 空白或纯图片页：{', '.join(f'{p:03d}' for p in empty_pages) if empty_pages else '无'}",
         "",
@@ -430,7 +439,7 @@ def write_audit(pages, tables, by_page):
         "",
         f"- 表格候选总数：{len(tables)}",
         f"- 已规范化关键表格：{len(verified_tables)}（{', '.join(verified_tables) if verified_tables else '无'}）",
-        "- 其余表格为 OCR 行级 Markdown 转写，已进入 `dietary_guidelines_china_2022_tables.md` 和 `qa/table_index.csv`，需继续人工逐列复核。",
+        "- 其余表格为 OCR 行级 Markdown 转写，已进入 `corpus/extracted/tables.md` 和 `qa/indexes/table_index.csv`，需继续人工逐列复核。",
         "",
         "## 置信度与噪声",
         "",
@@ -457,7 +466,7 @@ def write_audit(pages, tables, by_page):
             "- 因源文件为扫描 PDF，不能声明 100% 无误；本次交付是可追溯、可继续校订的完整文本化底稿。",
         ]
     )
-    Path("qa/extraction_audit.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (QA_AUDIT_DIR / "extraction_audit.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main():

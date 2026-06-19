@@ -1,6 +1,6 @@
 # Verified Table Overrides
 
-本文件只收录已经对照本地页图和 `qa/vision_ocr/page_NNN.tsv` 工作包逐单元核对过的中置信表。构建脚本会优先使用这些表体生成 `*_verified.md` 和单元格级 `qa/table_cell_corrections.csv`。
+本文件只收录已经对照本地页图和 `qa/audit/vision_ocr/page_NNN.tsv` 工作包逐单元核对过的中置信表。构建脚本会优先使用这些表体生成 `*_verified.md` 和单元格级 `qa/corrections/table_cell_corrections.csv`。
 
 ## 014 表 1-17 可选择的运动方案
 

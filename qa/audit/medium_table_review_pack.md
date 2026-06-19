@@ -13,7 +13,7 @@
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 | 内容 9 | 内容 10 | 内容 11 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -98,7 +98,7 @@
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 性别/范围 | 必要脂肪 | 健康体脂范围 |
 | --- | --- | --- |
@@ -183,7 +183,7 @@
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 关系/结论 | 证据体 | 可信等级 |
 | --- | --- | --- |
@@ -280,7 +280,7 @@
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 食物/单位 | 2岁- | 4岁- | 7岁- | 11岁- | 14岁- | 18岁- | 65岁- |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -378,7 +378,7 @@
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 _页图复核后未识别为可结构化表体；见复核说明。_
 
@@ -437,7 +437,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -608,7 +608,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 营养素 | 300ml 牛奶提供量 | 成人男性 RNI/AI 占比（%） | 成人女性 RNI/AI 占比（%） |
 | --- | --- | --- | --- |
@@ -710,7 +710,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 食物类别 | 健康关系 | 证据体 | 证据级别 |
 | --- | --- | --- | --- |
@@ -811,7 +811,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 食物类别 | 健康关系 | 证据体 | 证据级别 |
 | --- | --- | --- | --- |
@@ -911,7 +911,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 食物类别 | 健康关系 | 证据体 | 证据级别 |
 | --- | --- | --- | --- |
@@ -1033,7 +1033,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 国家/地区 | 建议摄入量 | 国家/地区 | 建议摄入量 |
 | --- | --- | --- | --- |
@@ -1125,7 +1125,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 食物 | 蛋白质（g） | 食物 | 蛋白质（g） | 食物 | 蛋白质（g） |
 | --- | --- | --- | --- | --- | --- |
@@ -1278,7 +1278,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 鱼类 | EPA（g/100g） | DHA（g/100g） | EPA+DHA（g/100g） |
 | --- | --- | --- | --- |
@@ -1379,7 +1379,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 营养素 | 鸡蛋黄 | 鸡蛋白 |
 | --- | --- | --- |
@@ -1474,7 +1474,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 食物 | 胆固醇（mg） | 食物 | 胆固醇（mg） | 食物 | 胆固醇（mg） |
 | --- | --- | --- | --- | --- | --- |
@@ -1596,7 +1596,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 营养素 | 鲍鱼 | 海参 | 带鱼 | 对虾 |
 | --- | --- | --- | --- | --- |
@@ -1715,7 +1715,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 营养型分类 | 代表油脂 | 主要特点 |
 | --- | --- | --- |
@@ -1801,7 +1801,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 1982年 | 1992年 | 2002年 | 2010-2012年 | 2015年 |
 | --- | --- | --- | --- | --- | --- |
@@ -1878,7 +1878,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 年龄组 | 合计男 | 合计女 | 城市男 | 城市女 | 农村男 | 农村女 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2008,7 +2008,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 性别/年龄 | <5g/d | 5-14.9g/d | 15-24.9g/d | >=25g/d |
 | --- | --- | --- | --- | --- |
@@ -2146,7 +2146,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 因素 | 健康关系 | 证据体 | 证据级别 |
 | --- | --- | --- | --- |
@@ -2270,7 +2270,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 食品类别 | 反式脂肪酸含量 |
 | --- | --- |
@@ -2346,7 +2346,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 类别/食品 | 钠（mg） | 折合食盐（g） |
 | --- | --- | --- |
@@ -2466,7 +2466,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 推荐级别 | 食物类别/举例 | 食用频次 |
 | --- | --- | --- |
@@ -2546,7 +2546,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 健康关系 | 证据体 | 证据级别 |
 | --- | --- | --- |
@@ -2610,7 +2610,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 _页图复核后未识别为可结构化表体；见复核说明。_
 
@@ -2684,7 +2684,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 _页图复核后未识别为可结构化表体；见复核说明。_
 
@@ -2758,7 +2758,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 年龄/性别 | 2岁- | 4岁- | 7岁- | 11-13岁 | 14-17岁 | 18-49岁 | 50-64岁 | 65岁- |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2873,7 +2873,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2947,7 +2947,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -3014,7 +3014,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -3073,7 +3073,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 |
 | --- | --- | --- | --- |
@@ -3143,7 +3143,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3226,7 +3226,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3342,7 +3342,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -3422,7 +3422,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 | 内容 9 | 内容 10 | 内容 11 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3544,7 +3544,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 _页图复核后未识别为可结构化表体；见复核说明。_
 
@@ -3606,7 +3606,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 _页图复核后未识别为可结构化表体；见复核说明。_
 
@@ -3691,7 +3691,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3777,7 +3777,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 | 内容 9 | 内容 10 | 内容 11 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3870,7 +3870,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 营养素 | 1000kcal | 1200kcal | 1400kcal | 1600kcal | 1800kcal | 2000kcal | 2200kcal | 2400kcal | 2600kcal | 2800kcal | 3000kcal |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4105,7 +4105,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4167,7 +4167,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4245,7 +4245,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4309,7 +4309,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4390,7 +4390,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 | 内容 9 | 内容 10 | 内容 11 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4527,7 +4527,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -4580,7 +4580,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 |
 | --- | --- | --- |
@@ -4637,7 +4637,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 | 内容 9 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4704,7 +4704,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 | 内容 8 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4777,7 +4777,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | merged_continuation |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 项目 | 内容 1 | 内容 2 | 内容 3 | 内容 4 | 内容 5 | 内容 6 | 内容 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4850,7 +4850,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 年龄/人群 | 男 EER | 女 EER | 碳水化合物 AMDR | 添加糖 | 脂肪 AMDR | 饱和脂肪酸 | 男蛋白质 RNI | 女蛋白质 RNI |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5108,7 +5108,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 年龄（岁） | 男生身高界值（cm） | 女生身高界值（cm） |
 | --- | --- | --- |
@@ -5229,7 +5229,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 年龄（岁） | 男生消瘦 | 男生营养不良 | 女生消瘦 | 女生营养不良 |
 | --- | --- | --- | --- | --- |
@@ -5412,7 +5412,7 @@ _页图复核后未识别为可结构化表体；见复核说明。_
 | 复核状态 | converted |
 | 列结构置信度 | medium |
 | 内容置信度 | medium |
-| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |
+| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |
 
 | 年龄（岁） | 男 P75 | 男 P90 | 女 P75 | 女 P90 |
 | --- | --- | --- | --- | --- |

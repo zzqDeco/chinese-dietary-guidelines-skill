@@ -6,10 +6,13 @@ from collections import defaultdict
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[1]
-BUILD_SCRIPT = ROOT / "scripts" / "build_guidelines_deliverables.py"
+ROOT = Path(__file__).resolve().parents[2]
+BUILD_SCRIPT = ROOT / "scripts" / "extraction" / "build_guidelines_deliverables.py"
 QA_DIR = ROOT / "qa"
 IMAGE_DIR = QA_DIR / "table_page_images"
+EXTRACTED_DIR = ROOT / "corpus" / "extracted"
+QA_AUDIT_DIR = QA_DIR / "audit"
+QA_INDEX_DIR = QA_DIR / "indexes"
 
 
 FALSE_POSITIVES = {
@@ -612,7 +615,7 @@ def write_tables_markdown(tables):
     parts = [
         "# 中国居民膳食指南（2022）表格汇总",
         "",
-        "> 本版为 99 个 OCR 表格候选的逐项列结构复核版。真实表格已按列输出；误抓的正文引用标为 `not_a_table_after_review`；跨页或续表标为 `merged_continuation`。扫描件 OCR 仍可能存在个别文字误识别，详见 `qa/extraction_audit.md`。",
+        "> 本版为 99 个 OCR 表格候选的逐项列结构复核版。真实表格已按列输出；误抓的正文引用标为 `not_a_table_after_review`；跨页或续表标为 `merged_continuation`。扫描件 OCR 仍可能存在个别文字误识别，详见 `qa/audit/extraction_audit.md`。",
         "",
     ]
     for idx, table in enumerate(tables, 1):
@@ -635,11 +638,13 @@ def write_tables_markdown(tables):
                 "",
             ]
         )
-    (ROOT / "dietary_guidelines_china_2022_tables.md").write_text("\n".join(parts), encoding="utf-8")
+    EXTRACTED_DIR.mkdir(parents=True, exist_ok=True)
+    (EXTRACTED_DIR / "tables.md").write_text("\n".join(parts), encoding="utf-8")
 
 
 def write_review_csv(tables):
-    with (QA_DIR / "table_review.csv").open("w", encoding="utf-8", newline="") as f:
+    QA_INDEX_DIR.mkdir(parents=True, exist_ok=True)
+    with (QA_INDEX_DIR / "table_review.csv").open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
             fieldnames=[
@@ -678,7 +683,8 @@ def write_review_csv(tables):
 
 
 def write_table_index(tables):
-    with (QA_DIR / "table_index.csv").open("w", encoding="utf-8", newline="") as f:
+    QA_INDEX_DIR.mkdir(parents=True, exist_ok=True)
+    with (QA_INDEX_DIR / "table_index.csv").open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(
             f,
             fieldnames=["table_id", "title", "pdf_page_start", "pdf_page_end", "status", "verified"],
@@ -704,7 +710,7 @@ def patch_page_status(tables):
         if status != "not_a_table_after_review":
             status_by_page[table.page].append(table.table_id)
 
-    path = QA_DIR / "page_status.csv"
+    path = QA_INDEX_DIR / "page_status.csv"
     rows = list(csv.DictReader(path.open(encoding="utf-8")))
     fieldnames = rows[0].keys()
     for row in rows:
@@ -724,7 +730,8 @@ def patch_page_status(tables):
 
 
 def patch_audit(tables):
-    audit = QA_DIR / "extraction_audit.md"
+    QA_AUDIT_DIR.mkdir(parents=True, exist_ok=True)
+    audit = QA_AUDIT_DIR / "extraction_audit.md"
     text = audit.read_text(encoding="utf-8") if audit.exists() else "# OCR 提取与校验审计报告\n"
     statuses = defaultdict(int)
     struct_conf = defaultdict(int)
@@ -741,7 +748,7 @@ def patch_audit(tables):
     )
     text = re.sub(
         r"- 其余表格为 OCR 行级 Markdown 转写，.*",
-        "- 其余真实表格已从 OCR 行级展示改为多列 Markdown 表格；逐项置信度见 `qa/table_review.csv`。",
+        "- 其余真实表格已从 OCR 行级展示改为多列 Markdown 表格；逐项置信度见 `qa/indexes/table_review.csv`。",
         text,
     )
     section = [
@@ -754,8 +761,8 @@ def patch_audit(tables):
         f"- OCR 误抓正文引用：{statuses['not_a_table_after_review']}",
         f"- 列结构置信度：{dict(struct_conf)}",
         f"- 内容置信度：{dict(content_conf)}",
-        "- 所有候选均已登记到 `qa/table_review.csv`，并提供对应页图 `qa/table_page_images/page_NNN.png`。",
-        "- `dietary_guidelines_china_2022_tables.md` 已由旧的 OCR 行级展示改为列结构展示；关键推荐量表和部分数值表采用人工整理后的高置信表格。",
+        "- 所有候选均已登记到 `qa/indexes/table_review.csv`，并提供对应页图 `qa/table_page_images/page_NNN.png`。",
+        "- `corpus/extracted/tables.md` 已由旧的 OCR 行级展示改为列结构展示；关键推荐量表和部分数值表采用人工整理后的高置信表格。",
         "- 本轮复核目标是列结构和候选归类；非关键长表仍可能存在 OCR 字符级误识别，需要出版级使用前逐字校样。",
     ]
     marker = "## 99 个表格候选逐项列结构复核"

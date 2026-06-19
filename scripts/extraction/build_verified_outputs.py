@@ -8,20 +8,23 @@ from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 QA_DIR = ROOT / "qa"
-TABLE_REVIEW_SCRIPT = ROOT / "scripts" / "apply_table_column_review.py"
-FULL_SOURCE = ROOT / "dietary_guidelines_china_2022_full.md"
-TABLES_SOURCE = ROOT / "dietary_guidelines_china_2022_tables.md"
-FULL_VERIFIED = ROOT / "dietary_guidelines_china_2022_full_verified.md"
-TABLES_VERIFIED = ROOT / "dietary_guidelines_china_2022_tables_verified.md"
-TABLE_CELL_LOG = QA_DIR / "table_cell_corrections.csv"
-TERM_LOG = QA_DIR / "ocr_term_corrections.csv"
-SENTINEL_LOG = QA_DIR / "numeric_sentinel_check.csv"
-AUDIT = QA_DIR / "extraction_audit.md"
-OVERRIDES = QA_DIR / "verified_table_overrides.md"
-BODY_TEXT_CORRECTIONS = QA_DIR / "body_text_corrections.csv"
-LOW_PAGE_REVIEW = QA_DIR / "low_confidence_page_review.csv"
+QA_AUDIT_DIR = QA_DIR / "audit"
+QA_CORRECTIONS_DIR = QA_DIR / "corrections"
+QA_INDEX_DIR = QA_DIR / "indexes"
+TABLE_REVIEW_SCRIPT = ROOT / "scripts" / "extraction" / "apply_table_column_review.py"
+FULL_SOURCE = ROOT / "corpus" / "extracted" / "full.md"
+TABLES_SOURCE = ROOT / "corpus" / "extracted" / "tables.md"
+FULL_VERIFIED = ROOT / "corpus" / "verified" / "full.md"
+TABLES_VERIFIED = ROOT / "corpus" / "verified" / "tables.md"
+TABLE_CELL_LOG = QA_CORRECTIONS_DIR / "table_cell_corrections.csv"
+TERM_LOG = QA_CORRECTIONS_DIR / "ocr_term_corrections.csv"
+SENTINEL_LOG = QA_CORRECTIONS_DIR / "numeric_sentinel_check.csv"
+AUDIT = QA_AUDIT_DIR / "extraction_audit.md"
+OVERRIDES = QA_AUDIT_DIR / "verified_table_overrides.md"
+BODY_TEXT_CORRECTIONS = QA_CORRECTIONS_DIR / "body_text_corrections.csv"
+LOW_PAGE_REVIEW = QA_INDEX_DIR / "low_confidence_page_review.csv"
 DENSE_BMI_PAGE = 365
 
 
@@ -366,7 +369,7 @@ def verified_table_section(review_module, idx: int, table, overrides: dict[int, 
             f"| 复核状态 | {meta['status']} |",
             f"| 列结构置信度 | {meta['structure_confidence']} |",
             f"| 内容置信度 | {meta['content_confidence']} |",
-            f"| verified 说明 | 表格结构已复核；数值校订状态见 `qa/table_cell_corrections.csv` |",
+            f"| verified 说明 | 表格结构已复核；数值校订状态见 `qa/corrections/table_cell_corrections.csv` |",
         ]
     )
     body = verified_markdown_for_table(review_module, idx, table, overrides)
@@ -430,7 +433,7 @@ def write_tables_verified(review_module, tables, overrides: dict[int, str]) -> N
     parts = [
         "# 中国居民膳食指南（2022）表格汇总（verified）",
         "",
-        "> 本版基于 99 个 OCR 表格候选的列结构复核版生成；已应用已登记的高频 OCR 术语修正。高置信关键表沿用页图复核后的整理表；55 张原中置信表已按页图和 Vision OCR 工作包写入 verified override，并在 `qa/table_cell_corrections.csv` 中记录逐单元 confirmed。",
+        "> 本版基于 99 个 OCR 表格候选的列结构复核版生成；已应用已登记的高频 OCR 术语修正。高置信关键表沿用页图复核后的整理表；55 张原中置信表已按页图和 Vision OCR 工作包写入 verified override，并在 `qa/corrections/table_cell_corrections.csv` 中记录逐单元 confirmed。",
         "",
     ]
     for idx, table in enumerate(tables, 1):
@@ -455,7 +458,7 @@ def build_page_table_blocks(review_module, tables, overrides: dict[int, str]) ->
         chunks = [
             "#### Verified table block",
             "",
-            f"> 本页含已复核表格：{titles}。表格数字/术语修正日志见 `qa/table_cell_corrections.csv` 与 `qa/ocr_term_corrections.csv`。",
+            f"> 本页含已复核表格：{titles}。表格数字/术语修正日志见 `qa/corrections/table_cell_corrections.csv` 与 `qa/corrections/ocr_term_corrections.csv`。",
             "",
         ]
         for meta, block in entries:
@@ -507,8 +510,8 @@ def write_full_verified(review_module, tables, overrides: dict[int, str]) -> Non
         "# 中国居民膳食指南（2022）完整 OCR Markdown（verified）",
     )
     preamble = preamble.replace(
-        "表格的规范化汇总见 `dietary_guidelines_china_2022_tables.md`。",
-        "表格的 verified 汇总见 `dietary_guidelines_china_2022_tables_verified.md`；术语和表格校订日志见 `qa/ocr_term_corrections.csv` 与 `qa/table_cell_corrections.csv`。",
+        "表格的规范化汇总见 `corpus/extracted/tables.md`。",
+        "表格的 verified 汇总见 `corpus/verified/tables.md`；术语和表格校订日志见 `qa/corrections/ocr_term_corrections.csv` 与 `qa/corrections/table_cell_corrections.csv`。",
     )
     parts = [preamble.rstrip()]
     for chunk in chunks[1:]:
@@ -639,7 +642,7 @@ def write_audit_update(tables, table_rows, term_rows, sentinel_rows, overrides: 
         f"- 中置信表格已登记为仍需逐单元校样：{len(medium_tables)} 张",
         f"- 仍需人工逐单元复核的页码/表号：{medium_table_list}",
         f"- verified 文件中目标噪声剩余命中：{unresolved if unresolved else '无'}",
-        f"- 额外转换事项：第 365 页为密集 BMI 对照图表，已作为非 99 候选图表写入 verified 正文和表格汇总，并列入 `qa/low_confidence_page_review.csv`。",
+        f"- 额外转换事项：第 365 页为密集 BMI 对照图表，已作为非 99 候选图表写入 verified 正文和表格汇总，并列入 `qa/indexes/low_confidence_page_review.csv`。",
         "",
         "说明：本阶段生成的 verified 版是“表格数字、高频 OCR 术语和低置信页目标噪声校订版”。55 张原中置信表已按页图和 Vision OCR 工作包写入 verified override，并逐单元登记为 confirmed；74 个低置信页已建立页图/Vision OCR 复核台账，其中第 365 页密集 BMI 对照图表已额外转换。该版本不等同于整本正文出版级逐字校样。原始 OCR 底稿和上一轮完整 Markdown 未覆盖，仍作为追溯证据保留。",
     ]
@@ -647,7 +650,9 @@ def write_audit_update(tables, table_rows, term_rows, sentinel_rows, overrides: 
 
 
 def main() -> None:
-    QA_DIR.mkdir(exist_ok=True)
+    QA_AUDIT_DIR.mkdir(parents=True, exist_ok=True)
+    QA_CORRECTIONS_DIR.mkdir(parents=True, exist_ok=True)
+    QA_INDEX_DIR.mkdir(parents=True, exist_ok=True)
     review_module = load_review_module()
     tables = load_tables(review_module)
     overrides = load_verified_overrides()
