@@ -1,0 +1,13 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  skill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate public skill package
+        run: STRICT_PUBLIC=1 bash scripts/validate_skill.sh

@@ -1,6 +1,49 @@
-# Dietary Guidelines for Chinese Residents Markdown Extraction
+# Dietary Guidelines for Chinese Residents Workspace
 
-本仓库保存《中国居民膳食指南（2022）》扫描版 PDF 的 OCR、表格复核、正文校订和 verified Markdown 产物。
+本地完整仓库保存《中国居民膳食指南（2022）》扫描版 PDF 的 OCR、表格复核、正文校订、verified Markdown 产物，以及基于这些资料整理出的 Codex skill。
+
+公开 GitHub 仓库只发布脱敏后的 skill package，不发布源 PDF、OCR 全文、verified 全书 Markdown、页图、QA 原始校订材料或任何私人饮食数据。
+
+## Public Skill Package
+
+公开发布内容仅包含：
+
+- `skills/chinese-dietary-guidelines/`
+- `VERSION`
+- `CHANGELOG.md`
+- `scripts/validate_skill.sh`
+- `.github/workflows/validate.yml`
+- public README and repository metadata
+
+公开包的目标是提供一个 Codex skill，用于：
+
+- 建立饮食画像
+- 记录和纠正每日饮食
+- 分析最近 1/7/14/30 天饮食结构
+- 按《中国居民膳食指南（2022）》原则生成相对计算和行动优先级
+- 生成具体可做的 7 天餐食计划、购物清单和备餐计划
+- 给出食堂、外卖、便利店、聚餐等外食建议
+- 复盘执行情况并调整下一轮计划
+
+私人饮食数据只保存在本机：
+
+```text
+~/.codex/data/chinese-dietary-guidelines/
+```
+
+公开仓库不包含、也不应提交这些文件。
+
+## Skill Installation
+
+开发完成后，将 skill 源码复制到本机 Codex skill 目录：
+
+```bash
+cp -R skills/chinese-dietary-guidelines ~/.codex/skills/chinese-dietary-guidelines
+```
+
+## Safety Boundary
+
+该 skill 面向日常膳食记录、结构分析和指南级饮食建议，不提供医疗诊断、疾病治疗、临床营养处方、孕期/儿童减重建议或补剂剂量处方。慢病、孕产风险、儿童生长异常、吞咽困难、快速体重变化等场景应提示医生或注册营养师评估。
 
 ## 主要产物
 
@@ -37,6 +80,31 @@
 - Poppler 渲染的页图
 - 手工裁图和其他 PNG 二进制中间产物
 - Tesseract 语言模型和 Python 缓存
+
+公开 GitHub 仓库额外不纳入：
+
+- OCR 文本目录
+- verified 全书 Markdown
+- QA 原始校订和审计材料
+- 源 PDF 或任何页面图片
+- 本机安装目录副本
+- `~/.codex/data/chinese-dietary-guidelines/` 下的私人饮食数据
+
+## Release And Validation
+
+当前版本见 `VERSION`。发布前运行：
+
+```bash
+bash scripts/validate_skill.sh
+```
+
+公开仓库 CI 使用严格模式：
+
+```bash
+STRICT_PUBLIC=1 bash scripts/validate_skill.sh
+```
+
+严格模式会拒绝 OCR/PDF/QA/full Markdown 抽取产物进入公开包。
 
 ## 常用校验
 

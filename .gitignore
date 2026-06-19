@@ -1,5 +1,9 @@
 .DS_Store
 
+# Public-release staging output
+.public-release/
+public-release/
+
 # Python and local build artifacts
 __pycache__/
 *.py[cod]
@@ -17,3 +21,8 @@ qa/body_page_images/
 qa/table_page_images/
 qa/manual_table_crops/
 *.png
+
+# Private local skill data must never be committed.
+.codex/
+diet_log.jsonl
+profile.json
